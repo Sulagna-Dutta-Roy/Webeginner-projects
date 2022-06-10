@@ -4,7 +4,6 @@
 
 If you have a idea of any web projects you want to build just open an appropriate issue regarding this, we will discuss and assign you that issue. In case you are confused and have queries, just ping [me](https://www.linkedin.com/in/sulagna-dutta-roy/), will help you get along and build!
 
-<br>
 
 ###  Submit a Pull Request :
 
@@ -61,4 +60,4 @@ $ git push origin [name_of_your_new_branch]
 
 Thanks to all the people who have contributed:
 
-![Contributors](https://contributors-img.web.app/image?repo=harshita214/Webeginner-projects)
+![Contributors](https://contributors-img.web.app/image?repo=sulagna-dutta-roy/Webeginner-projects)
