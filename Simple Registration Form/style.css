@@ -1,0 +1,31 @@
+body
+{
+    background: url(Images/background.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+form p{
+    text-align: center;
+}
+form h1{
+    text-align: center;
+}
+.container 
+{
+    text-align: center;
+}
+#btn {
+    content: '';
+    font-size: 25px;
+    background: darkcyan;
+    color: #fff;
+    font-weight: 300;
+    border: 1px solid darkcyan;
+    border-radius: 2px;
+}
+#btn:hover {
+    background: transparent;
+    color: #fff;
+}
