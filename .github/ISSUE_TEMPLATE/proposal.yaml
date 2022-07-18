@@ -1,12 +1,12 @@
 name: Proposal
-description: Propose a non-trivial change to Project-Guidance.
+description: Propose a non-trivial change to Webeginner-projects.
 title: "Title: "
 labels: "Proposal"
 body:
   - type: markdown
     attributes:
       value: |
-        Have you read the [Contributing Guidelines](https://github.com/Kushal997-das/Project-Guidance/blob/main/CONTRIBUTING.md) ?
+        Have you read the [Contributing Guidelines](https://github.com/Sulagna-Dutta-Roy/Webeginner-projects/blob/main/CONTRIBUTING.md) ?
 
   - type: textarea #description
     attributes:
