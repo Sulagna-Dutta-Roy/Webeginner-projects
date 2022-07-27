@@ -10,8 +10,8 @@ labels: "question"
 Please contact me instead.
 
 
-- [Email](mailto:daskushal980@gmail.com)
-- [GitHub](https://github.com/Kushal997-das)
-- [Instagram](https://www.instagram.com/kushal_das07/)
-- [LinkedIn](https://www.linkedin.com/in/kushal-das-7337421a9/)
+- [Email](mailto:sulagnadutta65@gmail.com)
+- [GitHub](https://github.com/Sulagna-Dutta-Roy)
+- [Instagram](https://www.instagram.com/____goodtime65/)
+- [LinkedIn](https://www.linkedin.com/in/Sulagna-Dutta-Roy/)
 
