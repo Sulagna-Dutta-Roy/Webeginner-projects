@@ -1,10 +1,12 @@
-body{background:#fbfbfb;
+body{
+ background:#fbfbfb;
     color:#333;
     margin:0 auto;
     width:100%
 }
 
-textarea{background:#fbfbfb;
+textarea{
+ background:#fbfbfb;
     border:0;
     color:#333;
     font-family:sans-serif;
@@ -16,7 +18,8 @@ textarea{background:#fbfbfb;
     padding:4rem;
     width:100%}
     
-button{background-color:#fbfbfb;
+button{
+ background-color:#fbfbfb;
     border:1px #ccc solid;
     color:#999;
     cursor:pointer;
@@ -24,5 +27,14 @@ button{background-color:#fbfbfb;
     margin:10px 0;
     padding:5px 10px}
     @media (max-width:100%)
-    {body{width:100%;padding:0}
-    textarea{padding:10px}button{float:none}}
+    {
+body
+{
+width:100%;padding:0
+}
+    textarea{
+padding:10px
+}
+button{
+float:none
+}}
