@@ -1,10 +1,11 @@
 body
 {
-    background: url(Images/background.png);
+    background: url(Images/background-image.png);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
+    font-family: "Montserrat", sans-serif;
 }
 form p{
     text-align: center;
@@ -12,11 +13,31 @@ form p{
 form h1{
     text-align: center;
 }
-.container 
-{
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
     text-align: center;
 }
-#btn {
+
+
+/* Class */
+
+.heading{
+    margin: 3% 2% ;
+    font-weight: 700;
+}
+
+.Form-buttons{
+    padding-bottom: 2%;
+}
+
+/* .container 
+{
+    text-align: center;
+} */
+/* #btn {
     content: '';
     font-size: 25px;
     background: darkcyan;
@@ -28,4 +49,5 @@ form h1{
 #btn:hover {
     background: transparent;
     color: #fff;
-}
+} */
+

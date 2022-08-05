@@ -1,61 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta charset ="viewport" content="width-device=width,initial-scale=1">
-        <title>Registration Form Page HTML</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="viewport" content="width-device=width,initial-scale=1">
+    <title>Registration Form Page HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
+
     <form>
-        <h1> Registration Form </h1>
-        <p>Fill the form carefully*</p>
+
+        <h1 class="heading"> Registration Form </h1>
+        <h2>Fill the form carefully</h2>
+
         <div class="container">
-           <label>Firstname</label>
-           <input type="text" id="fname" placeholder="" required>
-           <label>Lastname</label>
-           <input type="text" id="lname" placeholder="" required>
-            <br/><br/>
-           <label>Serial No</label>
-           <input type="text" id="lname" placeholder="" required>
-           <label>Date</label>
-           <input type="date" id="lname" placeholder="">
-           <!---------------------------------------------------->
-            <div class="infos"><br/>
-              <label>Gender></label>
-              <label>Male<input type="radio" name="Male" value="male"></label>
-              <label>Female<input type="radio" name="Female" value="female"></label>
-              <label>Others<input type="radio" name="Others" value="others"></label><br/>
-              <br/>
-        <legend>
-            <label>College Name</label>
-            <input type="text" value="">
-            <label>University</label>
-            <input type="text" value=""><br/><br/>
-            <label>Department:</label>
-            <select>
-                <option value="cs">None</option>
-                <option value="cs">CS</option>
-                <option value="ece">ECE</option>
-                <option value="It">IT</option>
-                <option value="eee">EEE</option>    
-            </select>
-            </legend><br/>
-        <legend>
-            <label>Email:</label>
-            <input type="text">
-            <label>Phone Number:</label>
-            <input type="text">
-        </legend><br/>
-        <label>Address:</label><br/>
-        <textarea rows="2" cols="50" name="address" id="address"></textarea>
-        <br/>
-        <legend>
-            <input type="button" id="btn" value="Submit">
-            <input type="button" id="btn" value="Reset">
-        </legend>
-        </div>
+            <section id="Personal-Details">
+                <h3>Personal Details</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 ">
+                        <label for="Registration-form" class="form-label">Firstname*</label>
+                        <input type="text" class="form-control" id="fname" placeholder="First name" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">Lastname*</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Last name" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">Serial No*</label>
+                        <input type="text" class="form-control" id="lname" placeholder="" required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">DOB*</label>
+                        <input type="date" class="form-control" id="lname" placeholder="" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">Country*</label>
+                        <select class="form-select">
+                            <option value="None">Choose</option>
+                            <option value="ind">India</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">State*</label>
+                         <select class="form-select">
+                            <option value="None">Choose</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="UK">Uttarakhand</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MD">Madhya Pradesh</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="GJ">Gujarat</option>
+                         </select>
+                    </div>
+                </div>
+                <br>
+                
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                     <label for="Registration-form" class="form-label">Pincode</label>
+                     <input type="text"  class="form-control"id="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                    <label for="Registration-form" class="form-label">Gender*</label>
+                    <select class="form-select">
+                        <option value="None">Choose</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                </div>
+            <br>
+            </section>
+
+            <!---------------------------------------------------->
+
+
+            <section class="Educational-Details">
+                <h3>Education Details</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">College Name*</label>
+                        <input type="text" class="form-control" value="">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">Course*</label>
+                        <select class="form-select">
+                            <option value="None">Choose</option>
+                            <option value="BE">BE/B.Tech</option>
+                        </select>
+                    </div>
+                </div>
+                 <br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">Year of Completion*</label>
+                        <select class="form-select">
+                            <option value="None">Choose</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                        </select>
+                        <br />
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label class="form-label">Department*</label>
+                <select class="form-select">
+                    <option value="Cs">Choose</option>
+                    <option value="Cs">Computer Science and Engineering</option>
+                    <option value="Ece">Electronics and Communication Engineering</option>
+                    <option value="It">Information Technology</option>
+                    <option value="Ee">Electrical Engineering</option>
+                    <option value="Che">Chemical Engineering</option>
+                    <option value="Me">Mechanical Engineering</option>
+                    <option value="Ce">Civil Engineering</option>
+                </select>
+                    </div>
+                </div>
+                
+            </section>
+            <br />
+
+            <section class="Contact Details">
+                <h3>Contact Details</h3>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">Email*</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <label for="Registration-form" class="form-label">Phone Number*</label>
+                        <input type="text" class="form-control" type="number">
+                    </div>
+                </div>
+                <br>
+                <label for="Registration-form" class="form-label">Address*</label><br />
+                <textarea rows="2" cols="50" class="form-control" name="address" id="address"></textarea>
+                <br />
+            </section>
+            <div class="Form-buttons">
+                <button class="btn btn-large btn-dark">Submit</button>
+                <button class="btn btn-large btn-dark">Reset</button>
+            </div>
+                    
         </div>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
 </body>
+
 </html>
