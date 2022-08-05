@@ -12,11 +12,11 @@ A basic realtime notepad, made with HTML, CSS and Javascript.
 This Notepad is a simple responsive design that contrasts the body backdrop with a single container.
 
 In the links below, you can see pictures of the actual design that was used.
-<details>
-<summary> Landing Page View :</summary>
-<br>
+##  Landing Page View :
+
+[Click for Demo](https://iamrahul8.github.io/Online-Notepad/)
+
 <img width="100%" src="images/preview.png"/>
-</details>
 
 
 ## Features
