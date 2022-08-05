@@ -1,0 +1,28 @@
+body{background:#fbfbfb;
+    color:#333;
+    margin:0 auto;
+    width:100%
+}
+
+textarea{background:#fbfbfb;
+    border:0;
+    color:#333;
+    font-family:sans-serif;
+    font-size:2rem;
+    height:98%;
+    line-height:1.4;
+    margin:0 auto;
+    outline:0;
+    padding:4rem;
+    width:100%}
+    
+button{background-color:#fbfbfb;
+    border:1px #ccc solid;
+    color:#999;
+    cursor:pointer;
+    float:right;
+    margin:10px 0;
+    padding:5px 10px}
+    @media (max-width:100%)
+    {body{width:100%;padding:0}
+    textarea{padding:10px}button{float:none}}
