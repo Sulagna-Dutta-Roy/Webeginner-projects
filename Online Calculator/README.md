@@ -35,9 +35,9 @@ Click on the link⬇ and boom 🌻✌
 * jquery
 * UI designed by myself.
 
-##License
-========
-MIT License
+## License
+
+Submission Under SSOC 22
 
 ```
 Copyright (c) 2022 Rahul Kumar
