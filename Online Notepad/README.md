@@ -48,6 +48,7 @@ In the links below, you can see pictures of the actual design that was used.
   <a href="https://github.com/iamrahul8" > Rahul Kumar </a>
   
   ## Licence
+  Contribution under SSOC'22
   
   ```
   MIT License
