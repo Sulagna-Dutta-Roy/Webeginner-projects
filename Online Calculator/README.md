@@ -11,7 +11,7 @@ Its useful for simple calculations.
 
 ## How to Run?
 
-Click on the link and boom 🌻✌
+Click on the link⬇ and boom 🌻✌
 # <a href="https://iamrahul8.github.io/Calculator/" >Calculator ↗</a> 
 
 ## Screenshot
@@ -39,6 +39,7 @@ Click on the link and boom 🌻✌
 ========
 MIT License
 
+```
 Copyright (c) 2022 Rahul Kumar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -58,5 +59,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
+```
 
