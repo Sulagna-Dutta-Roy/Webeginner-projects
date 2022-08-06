@@ -29,7 +29,6 @@ Click on the link⬇ and boom 🌻✌
 
 ## Built With
 
-* love
 * html
 * css
 * jquery
