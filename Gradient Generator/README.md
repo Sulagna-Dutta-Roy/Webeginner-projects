@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple website which helps users to create gradient backgrounds for their projects.
+This is a simple website that helps users to create gradient backgrounds for their projects.
 
 ### Technologies
 
