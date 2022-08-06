@@ -7,6 +7,8 @@ A Simple GitHub Webapp that searches for the user and shows profile summary. It 
 
 [Click for Demo](https://rtewari056.github.io/profilezy/)
 
+![Clock Screenshot](./images/app_preview.png)
+
 
 ## Features
 - Fully responsive
