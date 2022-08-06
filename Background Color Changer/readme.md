@@ -1,7 +1,7 @@
 # Background Color Changer App
 
 ## Description
-This is a simple app to change Background color.
+This is a simple web app which generate a random rgb color and assign it to background using Javascript.
 
 ## Technologies used
 - HTML
