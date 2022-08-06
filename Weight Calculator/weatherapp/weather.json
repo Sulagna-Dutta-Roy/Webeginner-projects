@@ -1,0 +1,31 @@
+{
+  "coord": { "lon": 91.275, "lat": 23.8364 },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "06n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 298.46,
+    "feels_like": 299.24,
+    "temp_min": 298.46,
+    "temp_max": 298.46,
+    "pressure": 1009,
+    "humidity": 84,
+    "sea_level": 1009,
+    "grnd_level": 1007
+  },
+  "visibility": 10000,
+  "wind": { "speed": 1.32, "deg": 27, "gust": 1.36 },
+  "clouds": { "all": 51 },
+  "dt": 1658858451,
+  "sys": { "country": "IN", "sunrise": 1658791282, "sunset": 1658839271 },
+  "timezone": 19800,
+  "id": 1279290,
+  "name": "Agartala",
+  "cod": 200
+}
