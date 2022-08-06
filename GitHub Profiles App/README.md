@@ -1,13 +1,13 @@
 
 # GitHub Profiles App
 
-A Simple GitHub Webapp that searches for the user and shows profile summary. It uses GitHub API to fetch user about user.
+A Simple GitHub Webapp that searches for the user and shows profile summary. It uses GitHub API to fetch data about user.
 
 ##  Home Page View :
 
 [Click for Demo](https://rtewari056.github.io/profilezy/)
 
-![Clock Screenshot](./images/app_preview.png)
+![Screenshot](./images/app_preview.png)
 
 
 ## Features
@@ -35,12 +35,12 @@ No backend required
 [Rohit Tewari](https://www.github.com/rtewari056)
 
   ## Licence
-  Contribution under SSOC'22
+  Contribution under Social Summer Of Code 2022
   
   ```
   MIT License
 
-Copyright (c) 2022 Rahul Kumar
+Copyright (c) 2022 Rohit Tewari
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
