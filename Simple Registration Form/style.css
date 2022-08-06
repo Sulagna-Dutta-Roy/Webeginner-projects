@@ -15,7 +15,7 @@ form h1{
 
 h2{
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 700;
     padding-bottom: 20px;
     text-align: center;
 }
@@ -24,7 +24,8 @@ hr{
     size: 5rem;
 }
 
-/* Class */
+/* Classes */
+
 .heading{
     margin: 3% 2% ;
     font-weight: 700;

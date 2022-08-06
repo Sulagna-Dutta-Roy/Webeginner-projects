@@ -20,14 +20,17 @@
 
     <nav class="navbar bg-dark">
         <div class="container-fluid">
-          <span class="navbar-brand h1" style="color: white; padding: 2%;">WeBeginner-Projects</span>
+            <span class="navbar-brand h1" style="color: white; padding: 2%;">WeBeginner-Projects</span>
         </div>
-      </nav>
+    </nav>
 
     <form>
 
         <h1 class="heading"> Registration Form </h1>
         <h2>Fill the form carefully</h2>
+
+
+        <!-- Personal-Details -->
 
         <div class="container">
             <section id="Personal-Details">
@@ -64,7 +67,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <label for="Registration-form" class="form-label">State*</label>
-                         <select class="form-select">
+                        <select class="form-select">
                             <option value="None">Choose</option>
                             <option value="UP">Uttar Pradesh</option>
                             <option value="UK">Uttarakhand</option>
@@ -73,32 +76,34 @@
                             <option value="RJ">Rajasthan</option>
                             <option value="HP">Himachal Pradesh</option>
                             <option value="GJ">Gujarat</option>
-                         </select>
+
+                        </select>
                     </div>
                 </div>
                 <br>
-                
+
 
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                     <label for="Registration-form" class="form-label">Pincode</label>
-                     <input type="text"  class="form-control"id="">
+                        <label for="Registration-form" class="form-label">Pincode</label>
+                        <input type="text" class="form-control" id="">
                     </div>
                     <div class="col-lg-6 col-md-6">
-                    <label for="Registration-form" class="form-label">Gender*</label>
-                    <select class="form-select">
-                        <option value="None">Choose</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Others">Others</option>
-                    </select>
+                        <label for="Registration-form" class="form-label">Gender*</label>
+                        <select class="form-select">
+                            <option value="None">Choose</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
                 </div>
-                </div>
-            <br>
+                <br>
             </section>
-<hr>
+            <hr>
             <!---------------------------------------------------->
 
+            <!-- Educational-Details -->
 
             <section class="Educational-Details">
                 <h3>Education Details</h3>
@@ -115,7 +120,7 @@
                         </select>
                     </div>
                 </div>
-                 <br>
+                <br>
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <label for="Registration-form" class="form-label">Year of Completion*</label>
@@ -128,25 +133,28 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <label class="form-label">Department*</label>
-                <select class="form-select">
-                    <option value="Cs">Choose</option>
-                    <option value="Cs">Computer Science and Engineering</option>
-                    <option value="Ece">Electronics and Communication Engineering</option>
-                    <option value="It">Information Technology</option>
-                    <option value="Ee">Electrical Engineering</option>
-                    <option value="Che">Chemical Engineering</option>
-                    <option value="Me">Mechanical Engineering</option>
-                    <option value="Ce">Civil Engineering</option>
-                </select>
+                        <select class="form-select">
+                            <option value="Cs">Choose</option>
+                            <option value="Cs">Computer Science and Engineering</option>
+                            <option value="Ece">Electronics and Communication Engineering</option>
+                            <option value="It">Information Technology</option>
+                            <option value="Ee">Electrical Engineering</option>
+                            <option value="Che">Chemical Engineering</option>
+                            <option value="Me">Mechanical Engineering</option>
+                            <option value="Ce">Civil Engineering</option>
+                        </select>
                     </div>
                 </div>
-                
+
             </section>
             <br />
-<hr>
+            <hr>
+
+            <!-- Contact details -->
+
             <section class="Contact Details">
                 <h3>Contact Details</h3>
-                
+
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <label for="Registration-form" class="form-label">Email*</label>
@@ -163,11 +171,23 @@
                 <br />
             </section>
             <hr>
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <br>
             <div class="Form-buttons">
                 <button class="btn btn-large btn-dark">Submit</button>
                 <button class="btn btn-large btn-dark">Reset</button>
             </div>
-                    
+
         </div>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
