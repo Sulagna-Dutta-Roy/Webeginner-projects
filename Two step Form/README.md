@@ -8,7 +8,10 @@ A basic Two-step Form design, made with HTML, CSS and Javascript.
 This Form is fully responsive design.
 In the links below, you can see pictures of the actual design that was used.
 <br>
-<img width="100%" src="images/preview.png"/>
+
+[Deploment link](https://iamrahul8.github.io/two-step-form/)
+
+<img width="100%" src="preview.png"/>
 
 
 
