@@ -2,7 +2,7 @@
 
 ### Description
 
-A simple website which helps the user to generate a random and strong password.
+A simple landing page which is helpful for begineers to learn about some HTML, CSS, Boostrap and Javascript. 
 
 ### Technologies used
 
