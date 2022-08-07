@@ -3,9 +3,9 @@
 
 A Basic Webapp that searches the given word and gives you definition of that word. It uses Dictionary API to fetch word definitions.
 
-<!-- ##  Home Page View : -->
+##  Home Page View :
 
-<!-- ![Screenshot](./images/) -->
+![Screenshot](./images/app_preview.png)
 
 
 ## Features
