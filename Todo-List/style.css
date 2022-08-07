@@ -1,0 +1,19 @@
+body{
+    background-color: #cae7df;
+}
+
+.center {
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 600;
+    background-image: conic-gradient(#00c2cb, #ee4b2b, #00c2cb);
+    /* conic-gradient(#00c2cb, #ee4b2b, #00c2cb); */
+    /* linear-gradient(45deg, #553c9a, #ee4b2b); */
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
