@@ -4,15 +4,12 @@ A basic Two-step Form design, made with HTML, CSS and Javascript.
 >Pay close attention to the information collected when making a reservation for a flat or building.
 
 
-## Design and Layout (Landing Page)
-
-This Form is fully responsive design.
-
-In the links below, you can see pictures of the actual design that was used.
 ## Landing Page View 
+This Form is fully responsive design.
+In the links below, you can see pictures of the actual design that was used.
 <br>
 <img width="100%" src="images/preview.png"/>
-</details>
+
 
 
 ## Features
