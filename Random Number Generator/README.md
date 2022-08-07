@@ -7,3 +7,10 @@ You can generate random numbers by specifying the ranges.
 - Js
 
 ## Deployment screenshot/Link:
+
+[Demo](https://iamrahul8.github.io/Random-Number-Generator/)
+
+<img src="preview.png"/>
+<br>
+
+>Submision under SSOC'22
