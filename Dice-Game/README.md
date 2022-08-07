@@ -1,4 +1,6 @@
-This is a simple Dice-Game. Every time when the user refreshes the page it then shows the result.
+# Dice-Game
+This is a simple Dice-Game. <br />
+It is a two-player game in which every time when the user refreshes the page it rolls the dice of Player 1 and Player 2 and the Player who gets the highest number on the dice wins the game.
 
 ![Image-1](readme-img/Pic_1.png)
 
