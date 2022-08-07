@@ -4,7 +4,7 @@ A simple web-app used for encoding and decoding text messages. It provides encod
 
 ## Working
 
-[Live deployed app](https://google.com/)
+[Live deployed app](https://srini047-encode-decode-app-vqg2yj.streamlitapp.com/)
 
 [streamlit-app-encode-decode.webm](https://user-images.githubusercontent.com/81156510/183291295-e759eb45-0c1c-4d4e-9f5a-e2f3f95f8a72.webm)
 
