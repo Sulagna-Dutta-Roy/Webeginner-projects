@@ -12,4 +12,4 @@ A simple landing page which is helpful for begineers to learn about some HTML, C
 - JavaScript
 
 
-![preview](https://github.com/tarunbisht-24/Webeginner-projects/blob/test-branch/Candy%20Museum/images/Web capture_7-8-2022_13532_tarunbisht-24.github.io.jpeg?raw=true)
+![preview](https://github.com/tarunbisht-24/Webeginner-projects/blob/test-branch/Candy%20Museum/images/preview.jpeg?raw=true)
