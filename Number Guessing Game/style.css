@@ -1,0 +1,45 @@
+body{
+background-color: aqua;
+}
+h1{
+    text-align: center;
+    color: lightcoral;
+}
+.container{
+    width: 560px;
+    height: 400px;
+    background-color: mediumslateblue;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border: 2rem solid lavenderblush;
+    
+
+}
+h2{
+    text-align: center;
+    padding-top: 100px;
+}
+h2:hover{
+    color: blue;
+}
+#user{
+    width: 170px;
+    height: 20px;
+    padding: 0 10px;
+}
+.btn{
+ border-radius: 20px;
+ padding: 0 10px;
+ margin: 0 5px;   
+ cursor: pointer;
+}
+button:hover{
+    background-color: aqua;
+    cursor: pointer;
+    transition: .2s;
+   }
+p{
+    color: antiquewhite;
+    font-size: 30px;
+}
