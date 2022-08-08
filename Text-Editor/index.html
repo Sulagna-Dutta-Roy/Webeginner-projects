@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Editor by Rishika</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styletext.css">
+  </head>
+  <body>
+    <div class="upper-layer">
+       <h1>Text Editor</h1>
+      </div>
+      <div class="container">
+      <div class="button-menu">
+      <button type="button" class="btn bold"onclick="f1()" >Bold</button>
+      <button type="button" class="btn italic"onclick="f2()" >Italic</button>
+      <button type="button" class="btn left" onclick="f3()"><i class="fa fa-align-left"></i></button>
+      <button type="button" class="btn center" onclick="f4()"><i class="fa fa-align-center"></i></button>
+      <button type="button" class="btn right" onclick="f5()"><i class="fa fa-align-right"></i></button>
+      <button type="button" class="btn Upper-case" onclick="f6()">Upper Case</button>
+      <button type="button" class="btn lower-case" onclick="f7()">Lower Case</button>
+       <button type="button" class="btn capitalise"onclick="f8()" >Capitalise</button>
+       <button type="button" class="btn clear"onclick="f9()" >Clear</button>
+    </div>
+      </div>
+        <br>
+        <div class="container">
+        <div class="main-content">
+          <div id="text">
+            <textarea id="textarea1" class="input-shadow form-control"
+                           name="name"
+                           rows="15"
+                           cols="100"
+                           placeholder="Your text here ">
+              </textarea>
+          </div>
+          </div>
+          </div>
+  </body>
+  <script src="script.js" ></script>
+</html>
