@@ -1,0 +1,210 @@
+
+        * {
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+           
+        }
+        nav {
+            background-color: transparent;
+            height: clip(858,70px,980);
+            width: 100%;
+            top: 0;
+            position: relative;
+            z-index: 10;
+        }
+        
+            label.logo{
+            color: white;
+            font-size: 40px;
+            padding: 0 70px;
+            line-height: 60px;
+            font-weight: bold;
+           
+        }
+        nav ul {
+            float: right;
+            margin-right: 25px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px ;
+          
+            margin: 0 5px;
+        
+        }
+        nav ul li a{
+            font-size:20px ;
+            color: white;
+            padding: 5px 10px ;
+            border-radius: 3px;
+        
+        }
+        
+        
+        a:hover{
+            background-color: #5cd1ff;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        a:active{
+            background-color: rgb(241, 28, 63);
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        
+        label.check-btn{
+            font-size: 30px;
+            color: white;
+            float: right;
+        line-height: 80px;
+            margin-right: 35px;
+            cursor: pointer;
+          display: none;
+        }
+        #check{
+            display: none;
+        }
+        
+        @media (max-width:892px ) {
+          label.check-btn{
+              display: block;
+          }  
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #5cd1ff;
+                top: 65px;
+                left: -100%;
+                text-align: center;
+                transition: all .8s;
+                z-index: 1000;
+            }
+            nav ul li {
+                display: block;
+            }
+            nav ul li  {
+                font-size: 20px;
+            }
+            a:hover{
+                background-color: rgb(131, 131, 216);
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            a:active{
+                background-color: rgb(236, 108, 129);
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+        input#check:checked ~ ul {
+            left: 0;
+        }
+        
+        }
+        
+        @media (max-width:400px ){
+            label.logo{
+                color: white;
+                font-size: 30px;
+                padding: 0 30px;
+                line-height: 50px;
+                font-weight: bold;
+               
+            }
+           
+              ul{
+                text-align: center;
+                transition: all .8s;
+                z-index: 10000;
+                  top: 45px;
+              }
+            
+              label.check-btn{
+                  margin-bottom: 10px;
+                  line-height: 60px;
+           
+              }
+        }
+
+
+.header{
+    height: 100%;
+   
+}
+.video-background{
+   
+   
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+ 
+
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background: #4ac0f6;
+  mix-blend-mode: overlay;
+}
+
+.text
+{
+  position: relative;
+  z-index: 999;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+    
