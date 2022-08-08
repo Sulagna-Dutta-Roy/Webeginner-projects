@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Color Picker</title>
+  </head>
+  <body>
+    <div class="text-center m-5">
+      <h2>Color Picker</h2>
+      <i class="fa-solid fa-palette fs-4"></i>
+    </div>
+
+    <section
+      id="section"
+      class="my-5 justify-content-center align-content-center"
+    >
+      <div class="py-2">
+        <div class="justify-content-center align-items-center">
+          <div class="text-center text-md-start">
+            <!-- div and 2 inputs inserted -->
+
+            <div class="card m-auto border border-3 border-secondary" style="width: 40rem">
+              <div class="card-body m-2 p-2">
+                <div class="text-center">
+                  <p class="m-3 fs-2 fw-normal">Pick a Color</p>
+                </div>
+                <div style="text-align: center" class="p-2 m-4">
+                  <div class="input-group input-group-lg">
+                    <span
+                      class="input-group-text bg-secondary fw-bolder text-white"
+                      id="inputGroup-sizing-lg"
+                      >Hex code</span
+                    >
+                    <input
+                      id="hex"
+                      type="text"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-lg"
+                    />
+                  </div>
+                  <input class="my-4" type="color" id="color" />
+                </div>
+                <p class="card-text fs-4 fw-light p-2 lh-sm">
+                  Click on the button and drag to choose your color, you will
+                  get the hex code for that in the box.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Adding js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
