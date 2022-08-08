@@ -1,4 +1,4 @@
-Hello, My Friends </br>
+Hello, My Friends 👋🏻 </br>
 Thank you for having interest in this repository ! </br>
 
 To use this application: </br>
