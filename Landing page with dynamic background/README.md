@@ -27,7 +27,7 @@ I designed a landing page with dynamic background.
 </div>
 <h1 align=""> Website UI </h1>
 <h3> Homepage </h3>
-<img width="100%" src="Landing page with dynamic background/img/preview.png"/>
+<img width="100%" src="img/preview.png"/>
 
 >Submission Under SSOC'22
 
