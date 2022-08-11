@@ -4,7 +4,7 @@ This game is made using python . This game is played against the computer.
 
 ###  How to Start?  
 
-Simple download and run the code.
+Simple download the code and run using any IDE.
 
 ### Library used?
 
