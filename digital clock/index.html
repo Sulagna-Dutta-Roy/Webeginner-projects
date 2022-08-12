@@ -15,47 +15,108 @@
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             color: aqua;
-            font-size: 80px;
-            
+            font-size: 300%;
+
             padding: 0 5px 0 5px;
 
         }
+
+        .buttonFormatS {
+          position: absolute;
+          top: 58%;
+          left: 46%;
+
+          padding: 5px;
+          font-size: 1rem;
+          font-family:Arial;
+          width: 8%;
+          border-width:1px;
+          color:#757d6f;
+          border-color:#b2b8ad;
+          font-weight:bold;
+          border-radius: 6px;
+          box-shadow:inset 0px 0px 14px -3px #f2fadc;
+          text-shadow:inset 0px 1px 0px #ced9bf;
+          background:linear-gradient(#dbe6c4, #9ba892);
+        }
+        .buttonFormatS:hover {
+          background: linear-gradient(#9ba892, #dbe6c4);
+        }
+
+
+
     </style>
 </head>
 <body>
-    <div id="MyClockDisplay" class="clock"></div>
+
+  <div>
+    <div id="MyClockDisplay" class="clock">
+
+
+
+
+
+  </div>
+        <p></p>
+        <button id="buttonFormat" class = "buttonFormatS" type="button" name="button">24-Hr-Format</button>
+
+
     <script>
         function showTime(){
             var date = new Date();
             var h = date.getHours();
             var m = date.getMinutes();
             var s = date.getSeconds();
-            var session = "AM";
+            if(timeFormat === 12){
+              var session = "AM";
 
-            if(h == 0){
-                h = 12;
+              if(h == 0){
+                  h = 12;
+              }
+
+              if(h>=12){
+                  h = h-12;
+                  session = "PM"
+              }
+
+              h = (h < 10) ? "0" + h : h;
+              m = (m < 10) ? "0" + m : m;
+              s = (s < 10) ? "0" + s : s;
+
+              var time = h + ":" + m + ":" + s + " " + session;
+            }
+            if(timeFormat === 24){
+              h = (h < 10) ? "0" + h : h;
+              m = (m < 10) ? "0" + m : m;
+              s = (s < 10) ? "0" + s : s;
+              var time = h + ":" + m + ":" + s;
+
             }
 
-            if(h>12){
-                h = h-12;
-                session = "PM"
-            }
-
-            h = (h < 10) ? "0" + h : h;
-            m = (m < 10) ? "0" + m : m;
-            s = (s < 10) ? "0" + s : s;
-
-            var time = h + ":" + m + ":" + s + " " + session;
-            document.getElementById("MyClockDisplay").innerText = time;
+            // document.getElementById("MyClockDisplay").innerText = time;
             document.getElementById("MyClockDisplay").textContent = time;
+            // var Button = document.getElementById("buttonFormat").innerText;
+            var Button = document.getElementById("buttonFormat");
+            Button.onclick = function(){
+              if(Button.innerText === "24-Hr-Format"){
+                document.getElementById("buttonFormat").textContent = "12-Hr-Format";
+                timeFormat = 24;
 
-            setTimeout(showTime, 1000);
+              }
+              else{
+                document.getElementById("buttonFormat").textContent = "24-Hr-Format";
+                timeFormat = 12;
+              }
+            };
+
+
+            setTimeout(showTime, 10);
 
 
         }
-
+        var timeFormat = 12;
         showTime();
     </script>
-    
+
 </body>
 </html>
