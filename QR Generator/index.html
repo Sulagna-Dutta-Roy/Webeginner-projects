@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="body">
+        <div class="main">
+            <div class="head">
+                QR Generator
+            </div>
+        <div class="box">
+            <form class="form">
+                <input type="text" placeholder='Enter Text' value="" id="qrvalue" ><br>
+                <input type="button" id="btn" placeholder="Generate" value="Generate" onclick="handlename()">
+                        
+            </form>
+            <img src="https://chart.apis.google.com/chart?cht=qr&chs=250x250&chl='+qvalue+'&choe=UTF-8" alt='hello' id="your">
+        </div>
+        </div>
+        </div>
+        <script type="text/javascript">
+            
+            
+            
+            function handlename(){
+                
+                
+                var qvalue=document.getElementById("qrvalue").value;
+                document.getElementById("your").src =" https://chart.apis.google.com/chart?cht=qr&chs=250x250&chl="+qvalue+"&choe=UTF-8";
+                
+            
+                
+                console.log(qvalue);
+
+            }
+        </script>
+    
+</body>
+</html>
