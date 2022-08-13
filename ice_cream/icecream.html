@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ice World</title>
+</head>
+<body>
+    <div class="nav flex font-sans p-5 items-center sticky top-0 bg-white">
+        <p class="text-transparent text-3xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+            Ice World 
+        </p>
+        <ul class=" flex flex-row ml-auto items-center font-bold space-x-10">
+            <li><a href="#home">Home</a></li>
+            <li>About</li>
+            <li>Contact</li>
+            <li><button class="p-2 text-white bg-blue-300 rounded-md border-none hover:bg-blue-700">Order Now</button></li>
+        </ul>
+    </div>
+    <div id="home" class="content flex mt-16 mb-20">
+        <img src="./images/cone.webp" alt="ice-cream" class="h-96 ml-20">
+        <p class="flex text-2xl font-mono text-center items-center pl-72 pr-40">
+            <q>
+                I don't need an inspiring and motivation quote. I need Ice Cream.
+            </q>
+        </p>
+    </div>
+    <h2 class="text-center text-4xl font-bold mb-5">What's new</h2>
+    <div class="types mb-20 p-5 grid grid-cols-3 gap-5">
+        <div class="img1">
+            <img src="./images/choclateicecream.webp" alt="" class="rounded-md h-[260px]">
+            <p class="text-center mt-3 p-2 text-xl font-bold">Desert Ice Cream
+                <br>
+                <button class=" mt-3 p-2 border-2 hover:border-pink-400 rounded-md" >Order now</button>
+            </p>
+        </div>
+        <div class="img2">
+            <img src="./images/scoops.webp" alt="" class="rounded-md h-[260px]">
+            <p class="text-center mt-3 p-2 text-xl font-bold">
+                Ice Cream Sundae
+                <br>
+                <button class="mt-3 p-2 border-2 hover:border-pink-400 rounded-md">Visit Parlour</button>
+            </p>
+        </div>
+        <div class="img3">
+            <img src="./images/tasty-tiramisu-dessert-white-background_681987-3086.webp">
+            <p class="text-center mt-3 p-2 text-xl font-bold">
+                Family Containers
+                <br>
+                <button class="mt-3 p-2 border-2 hover:border-pink-400 rounded-md">Order Now</button>
+            </p>
+        </div>
+    </div>
+    <div class="var bg-pink-300 p-2">
+        <h2 class="text-center text-4xl font-bold m-10">Shop by range</h2>
+        <div class="variety pb-5 pl-20 pr-20 grid grid-cols-3 gap-5">
+            <div class="img1 bg-slate-400 rounded-md mb-5">
+                <img src="./images/coold.webp">
+                <div class="cap1 text-center">
+                    <p>These are the icecream</p>
+                    <button></button>
+                </div>
+            </div>
+            <div class="img2 bg-slate-400 p-2">
+                <img src="./images/cupPacking.webp">
+            </div>
+            <div class="img3 bg-slate-400 p-2">
+                <img src="./images/strawberry.webp" alt="" class="h-[260px] rounded-md">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
