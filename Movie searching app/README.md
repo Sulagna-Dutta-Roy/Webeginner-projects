@@ -2,9 +2,9 @@
 
 A simple Web Application that allows users to search for movies and view details about the film. It uses TMDb API to fetch movie lists depending upon user queries.
 
-<!-- ##  Home Page View :
+##  Home Page View :
 
-![Screenshot](./images/app_preview.png) -->
+![Screenshot](./images/app_preview.png)
 
 
 ## Features
