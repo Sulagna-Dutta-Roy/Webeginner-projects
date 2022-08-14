@@ -6,11 +6,11 @@ The other one is the game page where users can play the game.
 
 ## landing page view
 
-![screenshot](2022-08-13 (4).png)
+![Screenshot](Images/Landing%20page.png)
 
 ## game page view
 
-![screenshot](2022-08-13 (10).png)
+![Screenshot](Images/game%20page.png)
 
 ## features
 
