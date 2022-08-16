@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<title> Two Step Form</title>
+<style>
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px 15px;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 400;
+    width: 100%;
+    min-width: 600px;
+    text-align: center;
+}
+
+
+#regForm {
+    background-color: rgb(235, 242, 245);
+    padding: 8px 35px 8px 35px;
+    /*border-radius: 2px solid rgb(41, 40, 40);*/
+    border-radius: 5px;
+ 
+    display: inline-block;
+    box-shadow:3px 3px 5px 6px #ccc;  
+}
+/*#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}*/
+
+h1 {
+  text-align: center;  
+  font-size: 30px;
+}
+
+input 
+ ,textarea,select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid beige;
+        border-radius: 5px;
+       
+        
+        
+        }
+
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color:#2196F3;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+fieldset{
+    background-color: rgb(235, 242, 245);
+    border: 1px solid rgb(32, 32, 31);
+    width: 50vw;
+    padding: 12px;
+    border: 1px solid beige;
+    border-radius: 5px;
+   margin: 5px;
+}
+
+
+    
+
+
+
+/*label{
+        
+    font-size: smaller;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: 0.1;
+padding: 8px 5px 5px 8px;
+    height: 8px;
+    width: 20%;
+    margin: 10px;
+    background-color: rgb(136, 136, 139);
+}*/
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #2196F3;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(194, 189, 189);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: rgb(194, 189, 189);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+   
+  }
+
+/*media query */
+
+@media (max-width:590px ) {
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+   margin: 20px 15px;
+   margin: 0;
+    font-size: 15px;
+    padding:5px;
+    font-weight: 400;
+   
+
+}
+fieldset {
+  background-color: rgb(235, 242, 245);
+  border: 1px solid rgb(32, 32, 31);
+  width: 60vw;
+  padding: 5px;
+  border: 1px solid beige;
+  border-radius: 5px;
+}
+table {
+    width: 80vw;
+    border-collapse: collapse;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(194, 189, 189);
+}
+
+#regForm {
+  background-color: rgb(235, 242, 245);
+ /* padding: 8px 35px 8px 35px;
+  /*border-radius: 2px solid rgb(41, 40, 40);*/
+  border-radius: 5px;
+  margin: 20px 15px;
+  width: 70vw;
+   font-size: 15px;
+   padding:5px 15px;
+   font-weight: 400;
+
+  display: inline-block;
+  box-shadow:3px 3px 5px 6px #ccc;  
+}
+
+}
+
+
+
+
+
+
+</style>
+
+<body>
+
+<form id="regForm" action="/action_page.php">
+
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+    <h1 class="main_heading">
+      User Information
+    </h1>
+    <p><input placeholder="Owner name" oninput="this.className = ''" name="name" class="required"></p>
+    
+   
+    <p><input type="email" name="email" id="email" placeholder="Email (optional)" ></p>
+ <p><input type="text" name="city" placeholder="City" required oninput="this.className = ''" class="required"></p>
+    <textarea placeholder="Full Address" name="address" id="address" class="required"></textarea>
+    <p><input type="number" placeholder="Area(sqft)" oninput="this.className = ''" class="required"></p>
+    <p><input type="number" placeholder="Rent/sqft per month" oninput="this.className = ''" class="required"></p>
+    <p><input type="number" placeholder="Security money (Optional)" oninput="this.className = ''" ></p>
+    <p><input type="number" placeholder="Maintenance Charge (Optional)" oninput="this.className = ''" ></p>
+    <p><fieldset>
+        <legend>
+            Total estimated rent/month (Optional)
+        </legend>
+        <input type="number" name="Total" id="" value="" oninput="this.className = ''"> 
+    </fieldset></p>
+
+ 
+
+
+
+
+  <!--  <p><input placeholder="Last name..." oninput="this.className = ''" ></p>
+    <p><input placeholder="Last name..." oninput="this.className = ''" ></p>
+    <p><input placeholder="Last name..." oninput="this.className = ''" ></p>
+-->
+
+    
+    
+  </div>
+
+
+  <!--    Next step-->
+
+
+  <div class="tab">
+    <h1 class="main_heading">
+        Extra Information
+    </h1>
+    
+    <p>  <input type="number" name="Distance" placeholder="Distance from road (meter)" class="required">
+    </p>
+    
+    
+    <p>  <input type="textarea" name="" placeholder="Short Description(Optional)">
+    </p>
+    <p>
+      <fieldset>
+           
+        
+ <legend>
+                Your property suitable for (required)
+            </legend>
+<table>
+        <tr>
+          <td><label class="container">Shop
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label></td>
+          <td> <label class="container">Showroom
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+        </tr>
+        <tr>
+          <td><label class="container">Warehouse
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+          <td><label class="container">Coaching Center
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+         
+        </tr>
+        <tr>
+          <td><label class="container">Office
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label></td>
+          
+        </tr>
+        
+      </table>
+
+
+
+    </fieldset>
+    
+    
+    <fieldset>
+        <legend>
+          <b>Availablity Status (required)</b> 
+        </legend>
+        <label class="container">Immediately Available
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+    
+                <input type="date" name="date" placeholder="select date">
+    </fieldset>
+    
+    
+    
+   
+        
+       
+    
+   
+ <fieldset>
+<legend>
+         <B> Furnishing Status (required)</B>
+        </legend>
+<table>
+        <tr>
+          <td><label class="container">Furnished
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label></td>
+          <td> <label class="container">Semi Furnished
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+        </tr>
+        <tr>
+          <td><label class="container">Unfurnished
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+         
+        </tr>
+        
+      </table>
+
+ </fieldset>
+
+    <fieldset>
+        <legend>
+        <B> Floor Status (required)</B> 
+        </legend>
+    <select>
+        
+        <option>
+            1st
+        </option>
+        <option>
+            2nd
+        </option>
+        <option>
+            3rd
+        </option>
+        <option>
+            4th
+        </option>
+        <option>
+            5th
+        </option>
+    </select>
+    </fieldset>
+
+    
+     
+      
+    <fieldset>
+      <legend>
+      <b>  Amenities (required)</b>
+      </legend>
+
+      <table>
+        <tr>
+          <td><label class="container">Parking
+            <input type="checkbox" >
+            <span class="checkmark"></span>
+          </label></td>
+          <td> <label class="container">Power backup
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+        </tr>
+        <tr>
+          <td><label class="container">Wifi
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+          <td><label class="container">Lift
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+        </tr>
+        <tr>
+          <td><label class="container">Security/cctv
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+          <td><label class="container">RO Water System
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+        </tr>
+        <tr>
+          <td><label class="container">Water disposal
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+          <td><label class="container">Fire Extinguisher
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+        </tr>
+        <tr>
+          <td><label class="container">Flowers/Garden
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+          <td><label class="container">Near the Road
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label></td>
+        </tr>
+        
+      </table>
+                                  
+    </fieldset>
+
+</div>
+  
+  
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    
+  </div>
+</form>
+
+<script src="validate.js">
+
+</script>
+
+</body>
+</html>
