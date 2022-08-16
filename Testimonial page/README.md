@@ -6,7 +6,7 @@ Testimonial page for website
 
 Link : [Demo](https://iamrahul8.github.io/testimonials/)
 
-<img src="assets/preview.png"/>
+<img src="assets/image_2022-08-16_235957250.png"/>
 
 # Built With
 
