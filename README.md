@@ -1,69 +1,11 @@
-# Welcome to Webeginner-projects
+# Exploratory Data analysis (Spotify dataset)
 
-This respository is specially for newcomers who wants to enhance their knowledge and skills by making small/large projects.
+## Description
+This is a eda which makes us understand the basic fundamentals in the spotify dataset
 
-<h1 align ="center"> This respository has been a part of
-<img src="https://user-images.githubusercontent.com/72568715/179416919-1c897250-bd1f-403f-9819-5a069d5564d0.PNG">
-</h1>
+### Technologies
+Python-(pandas,numpy,matplotlib,Kaggle(dataset)
 
-
-###  How to Start?  
-
-If you have a idea of any web projects you want to build just open an appropriate issue regarding this, we will discuss and assign you that issue. In case you are confused and have queries, just ping [me](https://www.linkedin.com/in/sulagna-dutta-roy-26421b201), will help you get along and build!
-
-
-###  Submit a Pull Request :
-
-Branch naming convention is as following
-
-`TYPE-ISSUE_ID-DESCRIPTION`
-
-When `TYPE` can be:
-
-- **feat** - is a new project
-- **doc** - documentation only changes
-- **fix** - a bug fix/improving of any project
-
-**All PRs must include a commit message with the changes description!**
-
-<b> <h3> For the initial start, fork the project and use git clone command to download the repository to your computer </b> </h3>. A standard procedure for working on an issue would be to:
-
-1. `git pull`, before creating a new branch, pull the changes from upstream. Your master needs to be up to date.
-
-```
-$ git pull
-```
-
-2. Create new branch from `master`
-```
-$ git checkout -b [name_of_your_new_branch]
-```
-
-3. Work - commit - repeat ( be sure to be in your branch )
-
-
-4. Push changes to GitHub
-
-```
-$ git push origin [name_of_your_new_branch]
-```
-
-5. Submit your changes for review
-   If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
-   
-6. Start a Pull Request
-   Now submit the pull request and click on `Create pull request`.
-   
-7. Get a code review approval/reject
-
-8. After approval, merge your PR 
-
-9. GitHub will automatically delete the branch after the merge is done. (they can still be restored).
-
-10. You made it! 🎊
-
-
-
-Thanks to all the people who have contributed:
-
-![Contributors](https://contributors-img.web.app/image?repo=sulagna-dutta-roy/Webeginner-projects)
+![Screenshot (169)](https://user-images.githubusercontent.com/90571547/184940314-39de83d9-ff35-48a0-92ec-619277e5ea7f.png)
+![Screenshot (170)](https://user-images.githubusercontent.com/90571547/184940321-8c2003bc-db6a-4aed-9451-5fdb2aec290e.png)
+![Screenshot (171)](https://user-images.githubusercontent.com/90571547/184940325-542e1e52-d306-49e8-86e7-943891bbdff4.png)
