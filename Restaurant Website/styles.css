@@ -1,0 +1,473 @@
+body{
+    font-size:16px;
+    background-color:#61122f;
+    color: #fff;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff url("Images/ajax-loader.gif") no-repeat center;
+    z-index: 99999;
+}
+
+#header-nav{
+    background-color:#f6b319;
+    border-radius: 0;
+    border:0;
+    width: 100%;
+}
+
+#logo-img {
+    background: url("Images/Home/restaurant-logo_large.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-toggle{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color:transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-toggle:focus{
+    outline:0;
+}
+
+.navbar-toggle .icon-bar{
+    display:block;
+    width:22px;
+    height:2px;
+    border-radius:1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar{
+    margin-top:4px;
+}
+
+.navbar-brand{
+    padding-top: 25px;
+}
+
+.navbar-brand h1{
+    font-family: 'Lora', serif;
+    color:#557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+
+#nav-list{
+    margin-top:15px;
+}
+
+#nav-list a{
+    color:#951c49;
+    text-align:center;
+}
+
+#nav-list a:hover{
+    background-color:#e7e7e7;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+    /* vertical-align: middle; */
+}
+
+.navbar-nav{
+    margin:7.5px -15px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    margin: 2px;
+}
+
+#phone {
+    margin-top: 5px;
+}
+
+#phone a {
+    text-align: right;
+    padding-bottom: 3px;
+}
+
+#phone div { 
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.container .jumbotron {
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #ccc;
+}
+
+#menu-tile {
+    background: url(Images/Home/menu-tile.jpg) no-repeat;
+    background-position: center;
+}
+
+#specials-tile {
+    background: url(Images/Home/specials-tile.jpg) no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#hours, #address {
+    line-height: 2;
+}
+
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #557c3e;
+    font-size: 0.8em;
+    line-height: 1.8;
+}
+
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+    margin-top: 25px;
+}
+
+
+/* MENU CATEGORY PAGE*/
+
+
+.category-tile {
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #ccc;
+}
+
+#menu-categories-title + div {
+    margin-bottom: 50px;
+}
+
+
+/* END OF MENU CATEGORY PAGE */
+
+
+/* SINGLE CATEGORY PAGE */
+
+
+.menu-item-tile {
+    margin-bottom: 25px;
+}
+
+.menu-item-tile hr {
+    width: 80%;
+}
+
+.menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+
+.menu-item-photo {
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+
+.menu-item-photo:hover {
+    box-shadow: 0 1px 5px 1px #ccc;
+}
+
+.menu-item-description {
+    padding-right: 30px;
+}
+
+h3.menu-item-title {
+    margin: 0 0 10px;
+}
+
+.menu-item-details {
+    font-size: 0.9em;
+    font-style: italic;
+}
+/* END OF SINGLE CATEGORY PAGE */
+
+
+/* ABOUT PAGE */
+#about {
+    margin-left: 105px;
+    margin-right: 105px;
+    margin-bottom: 100px;
+}
+
+#about h2 {
+    margin-top: 40px;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #f2f2f2;
+}
+/* END ABOUT PAGE */
+  
+/* AWARDS PAGE */
+#awards {
+    color: #f2f2f2;
+    min-height: 300px;
+}
+
+#awards h2 {
+    margin-top: 40px;
+}
+
+#awards p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f2f2f2;
+}
+/* END AWARDS PAGE */
+
+  
+@media (min-width: 1200px) {
+    .container .jumbotron {
+        background: url(Images/Home/jumbotron_1200.jpg) no-repeat;
+        height: 675px;
+    }
+}
+
+@media (min-width : 992px) and (max-width : 1199px) {
+    #logo-img {
+        background: url(Images/Home/restaurant-logo_medium.png) no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+    .container .jumbotron {
+        background: url(Images/Home/jumbotron_992.jpg) no-repeat;
+        height: 558px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 991px) {
+    .navbar-toggle {
+        display: none;
+    }
+    .container .jumbotron {
+        background: url(Images/Home/jumbotron_768.jpg) no-repeat;
+        height: 432px;
+    }
+}
+@media (max-width : 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 5vw;
+        margin-left: 6px;
+    }
+    .navbar-brand p {
+        text-transform: uppercase;
+        font-size: 0.6em;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+    .navbar-brand p img {
+        height: 20px;
+    }
+    .navbar > .container-fluid .navbar-brand {
+        margin-left: -15px;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-top: 20px;
+    }    
+    #nav-list a span {
+        vertical-align: middle;
+    }
+    #collapsable-nav a {
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+    }
+    #xs-deliver {
+        margin-top: 2.6em;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    .container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+    }
+    #menu-tile, #specials-tile {
+        width: 368px;
+        margin: 0 auto 15px;
+    }
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .panel-footer section hr {
+        width: 50%;
+    }
+    .menu-item-photo {
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+    .menu-item-description {
+        text-align: center;
+    }
+    #about p {
+        text-align: center;
+    }
+}
+
+@media (max-width : 479px) {
+    .navbar-brand h1 {
+        padding-top: 5px;
+        font-size: 5vw;
+    }
+    #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+}
