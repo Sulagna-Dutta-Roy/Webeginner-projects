@@ -2,6 +2,7 @@
 
 made this using html,css and bootstrap
 it is a tribute page to Elon musk the richest and smartest person in the globe. I made this because this guy has inspired a lot in terms of skills, management and other stuff. 
+Also this web page is responsive and has multiple components
 
 you can find the screenshot of website here - 
 
