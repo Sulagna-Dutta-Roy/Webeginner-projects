@@ -1,5 +1,6 @@
 var password = document.getElementById("password");
-
+var radioNo = document.getElementById('radioNo');
+radioNo.checked = true;
 
 // var options = document.querySelector('.options');
 //
@@ -12,9 +13,21 @@ var password = document.getElementById("password");
 function getPassword() {
   var numLen = document.getElementById("min");
   var passwordLength = parseInt(numLen.value);
+  let selectedSize;
+  const radioButtons = document.querySelectorAll('input[name="complex"]');
+  for (const radioButton of radioButtons) {
+                if (radioButton.checked) {
+                    selectedSize = radioButton.value;
+                    break;
+                }
+            }
+  var chars ="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if(selectedSize == "1"){
+    chars+="!@#$%^&*()";
+  }
 
-  var chars =
-    "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
     if(passwordLength<=0){
       passwordLength = 1;
       numLen.value = "1";
