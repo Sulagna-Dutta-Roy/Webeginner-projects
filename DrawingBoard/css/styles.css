@@ -1,0 +1,17 @@
+*{
+  margin:0;
+  padding:0;
+}
+#div{
+  width: 97%;
+  height: 85vh;
+  border: 1px solid black;
+  margin: 1.5%;
+}
+
+#button{
+    padding: 5px;
+    color: white;
+    background-color: rgb(83,165,81);
+    margin-left: 1.5%;
+}

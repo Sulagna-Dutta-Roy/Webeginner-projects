@@ -1,8 +1,17 @@
 # DIGITAL CLOCK 
 ## A digital clock which shows time.
+## Time in both 12 and 24 Hr Format.
+## Simple switching Button.
 ## tech stack 
 - HTML
 - CSS
 - JS
 # demo
-![179282106-f6deba14-cfce-4b48-a888-4a89e01148cd](https://user-images.githubusercontent.com/91176055/183235464-d986f6f5-940a-446f-84dc-1e8391a562af.png)
+![12_hr_format](https://user-images.githubusercontent.com/66233331/184417308-1f2c6e95-2e60-4e89-b2da-aea50a669de9.jpg)
+![24_hr_format](https://user-images.githubusercontent.com/66233331/184417367-e627e09c-83b8-4481-b421-2e2eb92255ec.jpg)
+
+## Use Button
+<ul>
+<li> By default the clock is in 12-Hr Format</li>
+<li>Click on <strong>Button</strong> to switch Format.</li>
+</ul>
