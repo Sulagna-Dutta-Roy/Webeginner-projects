@@ -2,7 +2,7 @@
 Gym Membership form
 
 ## Technology Used : 
-• HTML
+• HTML </br>
 • CSS
 
 PAGE PICTURE
