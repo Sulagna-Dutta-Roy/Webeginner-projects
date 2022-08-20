@@ -5,6 +5,13 @@ h1{
     text-align: center;
     color: lightcoral;
 }
+h3{
+    font-style: italic;
+    color: rgb(36, 109, 193);
+    font-size: large;
+    text-align: center;
+    font-family: Tahoma;
+}
 .container{
     width: 560px;
     height: 400px;
