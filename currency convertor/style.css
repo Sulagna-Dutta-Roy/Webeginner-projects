@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#a1c4fd,#09203f);
+
+    /* background-image: linear-gradient(to right top, #051937, #088fa6, #03b9a7, #66c183); */
+    /* background-color: #; */
+}
+.wrapper{
+    /* text-align: center; */
+    background-color: #fff;
+    width: 370px;
+    border-radius: 3%;
+    padding: 30px;
+}
+.wrapper header{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.wrapper form{
+    margin : 30px 0 15px 0;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5%;
+}
+
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+}
+form p{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid #675AFE;
+}
+
+
+                                    /* drop-list section */
+.drop-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.drop-list .select-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 45px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    /* padding: 10px; */
+}
+.drop-list .icon{
+    cursor: pointer;
+    font-size: 23px;
+    margin-top: 30px;
+}
+.select-box select{
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+    width: auto;
+}
+.select-box img{
+    max-width: 25px;
+}
+/* Scroll Bar */
+
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+    /* height: 8px; */
+}
+.select-box select::-webkit-scrollbar-track{
+    height: 8px;
+    background-color: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
+
+.exchange-rate{
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+#btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 24px;
+    color:#326ac4;
+    background-color: #fff;
+    transition: color .25s .5s;
+    transition: background-color .25s .5s;
+    border: 1px solid #326ac4;
+    
+    font-size: 17px;
+
+    cursor: pointer;
+
+    letter-spacing: 1px;
+
+}
+
+
+#btn:hover{
+    color: #fff;
+    background-color: #326ac4;
+   transition-delay: .25s;
+}

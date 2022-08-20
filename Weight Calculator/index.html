@@ -5,39 +5,46 @@
     <meta name="viewport" content = "width-device=width,initial-scale=1">
     <title>Weight Calculator</title>
     <link rel="stylesheet"  href="style.css">
+    <script src="https://kit.fontawesome.com/ec689a8ca0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
         <h1>Weight Calculator</h1>
-        <input type="text" placeholder="Input" id="input">
-        <span>&nbsp; &nbsp; = </span>
-        <input type="text" placeholder="Result" id="result">
-
+        <form action="#" placeholder="0"  >
+            <p>Enter Weight</p>
+            <input type="number" id="input_value" >
+        <div class="drop-list">
+            <div class="from">
+            <p>From</p>
+            <div class="select-box">
         <select id="inputType">
             <option value="Pounds">Pounds</option>
             <option value="Kilograms">Kilograms</option>
             <option value="Ounces">Ounces</option>
             <option value="Stones">Stones</option>
         </select>
+    </div>
+</div>
+        <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+            <div class="to">
+            <p>To</p>
+            <div class="select-box">
         <select id="resultType">
             <option value="Pounds">Pounds</option>
             <option value="Kilograms">Kilograms</option>
             <option value="Ounces">Ounces</option>
             <option value="Stones">Stones</option>
         </select>
-        <input type="text" id="grams" placeholder="Add a value"><br/>
-        <span id="error"></span>
-        <p>Convert to:
-            <select id="type">
-                <option value="Pounds">Pounds</option>
-                <option value="Kilograms">Kilograms</option>
-                <option value="Ounces">Ounces</option>
-                <option value="Stones">Stones</option>
-            </select>
-        </p>
-        <button id="btn">Convert</button>
-        <p id="output">&nbsp;</p>
     </div>
+</div>
+        </div>
+        <button id="btn" onclick="convertWeight()">Convert</button>
+        <div class="result-area">
+            <p class="result">Answer</p>
+            <input type="text" value="" id="result" >
+          </div>
+</form>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

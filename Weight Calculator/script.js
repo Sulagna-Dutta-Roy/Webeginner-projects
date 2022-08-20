@@ -1,51 +1,45 @@
-let button = document.getElementById('btn');
-button.addEventListener('click', function () {
-    const gram = parseInt(document.getElementById('grams').value);
-    const type = document.getElementById('type').value;
+function convertWeight(){
+    let val = document.getElementById("input_value");
+    let result = document.getElementById("result");
+    let input = document.getElementById("inputType");
+    let output = document.getElementById("resultType");
+    val.addEventListener("keyup", convertWeight);
+    inputType.addEventListener("change", convertWeight);
+    resultType.addEventListener("change", convertWeight);
 
-    if (gram === '' || isNaN(gram)){
-        document.getElementById('grams').focus();
-        document.getElementById('error').innerHTML = 'Please provide a valid gram';
-        document.getElementById('output').innerHTML = '';
+    let inputValue = input.value;
+    let outputValue = output.value;
+    if(inputValue === "Pounds" && outputValue === "Kilograms"){
+        result.value = Number(val.value) * 0.45359237 ;
+      }else if(inputValue === "Pounds" && outputValue === "Ounces"){
+        result.value = Number(val.value) *16;
+      }else if(inputValue === "Pounds" && outputValue === "Stones"){
+        result.value = (val.value)/14;
+      }
+      if(inputValue === "Kilograms" && outputValue === "Pounds"){
+        result.value = Number(val.value)*2.20462;
+      }else if(inputValue === "Kilograms" && outputValue === "Ounces"){
+        result.value = Number(val.value) *35.274 ;
+      }else if(inputValue === "Kilograms" && outputValue === "Stones"){
+        result.value = (val.value)/6.35;
+      }
+      if(inputValue === "Ounces" && outputValue === "Pounds"){
+        result.value = Number(val.value)/16;
+      }else if(inputValue === "Ounces" && outputValue === "Kilograms"){
+        result.value = Number(val.value)/35.3;
+      }else if(inputValue === "Ounces" && outputValue === "Stones"){
+        result.value = Number(val.value)/224;
+      }
+      if(inputValue === "Stones" && outputValue === "Pounds"){
+        result.value = Number(val.value)*14;
+      }else if(inputValue === "Stones" && outputValue === "Kilograms"){
+        result.value = Number(val.value ) *6.35029 ;
+      }else if(inputValue === "Stones" && outputValue === "Ounces"){
+        result.value = (val.value)*224;
+      }
+
     }
-    else {
-        document.getElementById('error').innerHTML = '';
-        switch(type) {
-            case 'Pounds':
-                convert_pounds(gram);
-                break
-            case 'Kilograms':
-                convert_kilogram(gram);
-                break
-            case 'Ounces':
-                convert_ounces(gram);
-                break
-            case 'Stones':
-                convert_stones(gram);
-                break
-            default:
-                alert('Error');
-        }
-        function convert_pounds(gram){
-            let rate = 0.0022, pounds;
-            pounds = gram * rate;
-            document.getElementById('output').innerHTML = gram + " grams = " + pounds.toFixed(3) + ' pounds.';
-        }
-        function convert_kilogram(gram){
-            let rate = 0.001, kilogram;
-            kilogram = gram * rate;
-            document.getElementById('output').innerHTML = gram + " grams = " + kilogram.toFixed(3) + ' kgs.';
-        }
-        function convert_ounces(gram){
-            let rate = 0.035274, ounces;
-            ounces = gram * rate;
-            document.getElementById('output').innerHTML = gram + " grams = " + ounces.toFixed(3) + ' ounces.';
-        }
-        function convert_stones(gram){
-            let rate = 0.00015747, stones;
-            stones = gram * rate;
-            document.getElementById('output').innerHTML = gram + " grams = " + stones.toFixed(3) + ' stones.';
-        }
+
+    function reset(){
+      convertWeight();
     }
-});
-*/

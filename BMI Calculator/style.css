@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: url(./Images/backg.png);
+    background-size: cover;
+ font-family: 'Roboto';
+
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.wrapper{
+    min-width: 400px;
+    background: #FAFAFA;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+}
+.wrapper::before{
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+      top:-6%;
+      bottom: -5%;
+      background-color: rgba(255,255,255,0.3);
+      box-shadow:0px 0px 166px -31px rgba(0,0,0,0.15) ;
+      border-radius: 60px;
+      z-index: -1;
+    
+}
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+.content{
+    padding: 0 40;
+}
+.input{
+    background:#f4efe8;
+    box-shadow: 0px 0px 95px -30px rgba(0,0,0,0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+#height,#weight{
+    background:#f4efe8;
+}
+.input label{
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.input input{
+    outline:none;
+    border: none;
+    border-bottom: 1px solid  #a359a0;
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+}
+button{
+    color: #fff ;
+background: #a359a0 ;
+border: none;
+font-weight: bold;
+font-size: 15px;
+border-radius: 12px;
+padding: 14px 0;
+width: 70%;
+outline: none;
+cursor: pointer;
+}
+button:hover{
+    color: #fc766a ;
+border: 1px solid #a359a0;
+background-color: #fff;
+transition: 0.3s;
+}
+.result{
+    padding: 30px 20px;
+}
+.result p{
+    font-weight: 500;
+    font-size: 22px;
+    color:#000;
+    /* margin-bottom: 15px;  */
+}
+.result #result{
+    font-size: 36px;
+    font-weight: 600;
+    color: #a359a0;
+    background-color: #f4efe8;
+    display: inline-block;
+     padding:8px 35px ;
+     border-radius: 55px;
+     margin-bottom: 25px;
+}
+#comment{
+    color:#a359a0;
+    font-weight: 800;
+    
+}

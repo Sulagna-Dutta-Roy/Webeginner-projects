@@ -1,0 +1,75 @@
+/* Created by Rahul with ❤*/
+
+
+body{
+    background-image: linear-gradient(to bottom left, rgb(188, 50, 243), rgb(52, 179, 218));
+background-repeat: no-repeat;
+background-size:cover;
+
+min-height: 600px;
+min-width:50%;
+}
+.main{
+text-align:left;
+    background-color: rgb(255, 255, 255);
+   min-height:90vh;
+    max-width:50vh;
+    
+    margin-top:50px;
+    color: rgba(36, 36, 35, 0.822);
+    border-radius: 10px;
+   
+    justify-content: center;
+    align-items: center;
+    min-width:300px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    padding-top: 10px;
+    color: rgb(34, 32, 32);
+}
+.one{
+    font-size: 10px;
+    font-family: sans-serif;
+    color: grey;
+}
+.button{
+    margin:0 auto;
+    background-image: linear-gradient(to right, rgb(207, 61, 200), rgb(138, 58, 241),rgb(8, 174, 225));
+    border-radius: 50px;
+    width: 70%;
+    min-height: 30px;
+    padding-top:8px;
+}
+.spain{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+.one1{
+    border-color: ;
+    min-height: 20px;
+    max-width: 80%;
+  border-bottom:2px solid rgb(194, 193, 193) ;
+  border-width: 0px 0px 2px 0px;
+  padding-top: 20px;
+  outline:none;
+}
+.one2{
+    border-color: ;
+    height: 70%;
+    max-width: 80%; 
+  border-bottom:2px solid rgb(194, 193, 193) ;
+  border-width: 0px 0px 2px 0px;
+  padding-top: 30px;
+  outline:none;
+}
