@@ -6,19 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-    <script src="main.js"></script>
+
     <title>Random Password Generator</title>
   </head>
   <body>
     <h2>Random Password Generator</h2>
     <div class="inputBox">
-      <input
-        type="text"
-        name=""
-        placeholder="Create Password"
-        id="password"
-        readonly=""
-      />
+      <table>
+
+        <th>
+          <input
+            type="text"
+            name=""
+            placeholder="Create Password"
+            id="password"
+            readonly=""
+          />
+        </th>
+        <th>
+          <input type="number" value="10" id="min" name="min" />
+        </th>
+
+      </table>
+      <div>
+        <form class="myForm" action="index.html" method="post">
+          <table>
+            <th><label>May add special Chars:</label></th>
+            <th>
+              <th><label ><input class="radioCSS" id = "radioYes" type="radio" name="complex" value="1">Yes</label></th>
+              <th><label><input class="radioCSS" id = "radioNo" type="radio" name="complex" value="0">No</label></th>
+            </th>
+          </table>
+
+
+
+        </form>
+
+
+
+      </div>
+
+
+
       <table>
         <th>
           <div id="button" class="btn1" onclick="getPassword()">Generate</div>
@@ -28,5 +57,6 @@
         </th>
       </table>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
