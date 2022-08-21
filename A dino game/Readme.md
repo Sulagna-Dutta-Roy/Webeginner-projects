@@ -1,4 +1,6 @@
-# A Dino Game
+# Dino Game
+
+## About
 
 A simple web application which allows users to play game. It consists of two pages.
 one is landing page which has instructions to play the game is available.
@@ -6,19 +8,21 @@ The other one is the game page where users can play the game.
 
 ## landing page view
 
+The Sreenshot of the landing page where user lands and where the button to start the game is placed with instructions to play the game.
 ![Screenshot](Images/Landing%20page.png)
 
 ## game page view
 
+The screenshot of the game page when user will be directed after clicking the start button present in the landing page and can enjoy the game.
 ![Screenshot](Images/game%20page.png)
 
 ## Tech stack used
 
 ## frontend
 
-[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white")
+[CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
+[Javascript](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## features
 
