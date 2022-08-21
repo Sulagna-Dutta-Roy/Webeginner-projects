@@ -223,3 +223,130 @@ border-right:5px solid #ffffff;
 @keyframes jump{
 50%{transform: translateY(-20px);}
 }
+.c8{
+  position: absolute;
+  left:750px;
+  top:320px;
+  }
+.loader {
+  width: 25px;
+  height: 25px;
+  animation: circle 2s linear infinite;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid #f833ff;
+  border-bottom: 16px solid #fff;
+  border-left: 16px solid #ffbf00;
+}
+@keyframes circle {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.c9{
+position: absolute;
+top: 440px;
+left: 565px;
+transform: translate(-50%,-50%);
+}
+.progress{
+position: relative;
+height: 10px;
+width: 580%;
+border: 5px solid #00ff4c;
+border-radius: 15px;
+}
+.progress .color{
+position: absolute;
+background-color: #ffffff;
+width: 0px;
+height: 10px;
+border-radius: 15px;
+animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+0%{
+  width: 0%;
+}
+25%{
+    width: 50%;
+}
+50%{
+    width: 75%;
+}
+75%{
+    width: 85%;
+}
+100%{
+    width: 100%;
+}
+}
+.c-10{
+  position: absolute;
+  left:665px;
+  top:420px;
+  }
+.load {
+  width: 40px;
+  height: 40px;
+  animation: circle 2s linear infinite;
+  border-radius: 50%;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #f833ff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #ffbf00;
+}
+@keyframes circle {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.c-11{
+  position: absolute;
+  left:760px;
+  top:400px;
+  }
+.ripple {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.ripple div {
+  position: absolute;
+  border: 4px solid #ffbf00;
+  opacity: 1;
+  border-radius: 50%;
+  animation: ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
