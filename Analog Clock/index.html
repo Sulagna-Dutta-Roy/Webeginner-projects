@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS + CSS clock</title>
+</head>
+<body>
+    <div class = "clock">
+        <div class ="clock-face">
+            <div class ="hand hr-hand"></div>
+            <div class ="hand min-hand"></div>
+            <div class ="hand sec-hand"></div>
+        </div>
+    </div>
+    
+</body>
+<style>
+
+    html{
+        background-image: url("image/simple-simple-background-jailsonsea-ultra-settings-home-movie-hd-wallpaper-preview.jpg");       
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    body{
+        backdrop-filter: blur(50px); 
+        display: flex;
+        flex: 1;
+        min-width: 100vh;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+    .clock{
+        width: 20rem;
+        height: 20rem;
+        border: 20px solid black;
+        display:flex;
+        justify-content: center;
+        margin: 50px auto;
+        border-radius: 50%;
+        position: relative;
+        padding: 2rem;
+        box-shadow: 
+            0 0 0px 4px rgba(0,0,0,1),
+            inset 0 0 0 3px #EFEFEF,
+            inset 0 0 10px black,
+            0 0 10px rgba(0,0,0,2);
+    }
+    
+    .clock-face{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-3px);
+    }
+
+    .hand{
+        width: 50%;
+        height: 7px;
+        background: black;
+        position : absolute;
+        top: 50%;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        transition: all 0.05s;
+        transition-timing-function: cubic-bezier(0, 3.07, 0.58, 1);
+    }
+
+    .hr-hand{
+        width: 50%;        
+    }
+
+    .min-hand{
+        height: 5px;
+    }
+
+    .sec-hand{
+        height: 4px;
+    }
+
+
+
+</style>
+
+<script>
+    let secHand = document.querySelector('.sec-hand');
+    let minHand = document.querySelector('.min-hand');
+    let hrHand = document.querySelector('.hr-hand');
+
+    function setDate () {
+        let now = new Date();
+
+        let seconds = now.getSeconds();
+        let secondDegree = ((seconds/60) *360) + 90;
+        secHand.style.transform = `rotate(${secondDegree}deg)`;
+
+        let minutes = now.getMinutes();
+        let minuteDegree = ((minutes/60) *360) + 90;
+        minHand.style.transform = `rotate(${minuteDegree}deg)` ;
+
+        let hours = now.getHours();
+        let hourDegree = ((hours/12) * 360) + 90;
+
+        hrHand.style.transform = `rotate(${hourDegree}deg)` ;
+    }
+
+    setInterval(setDate, 1000);
+</script>
+</html>
