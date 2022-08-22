@@ -13,4 +13,4 @@ Its a tour & travel agency website that consists destinations, packages and resp
 
 ## Contribution under SSOC
 
-[!screenshot](screenshot.png)
+![screenshot](screenshots.png)
