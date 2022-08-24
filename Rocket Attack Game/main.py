@@ -105,6 +105,29 @@ def dispGameOver():
     screen.blit(end_,(300,300))
 
 
+def pause():
+    running = True
+    while running:
+        pause_ = font.render("Game Paused",True,(255,255,255))
+        screen.blit(pause_,(300,300))
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+        # keystroke direction check
+            if event.type == pygame.KEYUP:
+                if event.key == pygame.K_p:
+                    running = False
+        pygame.display.update()
+            #
+        
+        
+        
+        
+        
+    
+
+
 # Game loop
 running = True
 while running:
@@ -135,6 +158,8 @@ while running:
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0
+            if event.key == pygame.K_p:
+                pause()
 
     # 5 = 5 + -0.1 -> 5 = 5 -0.1
     playerX += playerX_change
@@ -156,6 +181,8 @@ while running:
         elif enemyX[i] >= 736:
             enemyX_change[i] = -2
             enemyY[i] += enemyY_change[i]
+        if(enemyY[i]>750):
+            enemyY[i] = math.random(50,190)
 
         #GameOver
         if(isGameOver(enemyX[i],enemyY[i],playerX,playerY)):
