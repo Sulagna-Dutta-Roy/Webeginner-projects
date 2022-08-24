@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+    
+}
+p{
+    font-size: 40px;
+    color: aqua;
+    text-align: center;
+}
+#piano{
+    height: 450px;
+    padding: 100px 30px 0 30px;
+    background-color: crimson;
+    border-radius: 10px;
+    
+
+}
+.keys{
+    position: relative;
+    overflow: hidden;
+    
+   
+}
+.white-keys{
+    display: flex;
+}
+.black-keys{
+    position: relative;
+    display: flex;
+}
+
+.white-key{
+    height: 280px;
+    width: 68px;
+    background-color: aliceblue;
+    border-radius: 0 0 8px 8px;
+    border: solid black 2px;
+    box-sizing: border-box;
+}
+.black-key{
+    height: 160px;
+    width: 38px;
+    background-color: black;
+    border-radius:0 0   5px 5px ;
+    box-sizing: border-box;
+    position: absolute;
+}
+.black-key:nth-child(1)
+{
+    left: 48px; 
+}
+.black-key:nth-child(2)
+{
+    left: 117px; 
+}
+.black-key:nth-child(3)
+{
+    left: 253px; 
+}
+.black-key:nth-child(4)
+{
+    left: 320px; 
+}.black-key:nth-child(5)
+{
+    left: 389px; 
+}.black-key:nth-child(6)
+{
+    left: 525px; 
+}.black-key:nth-child(7)
+{
+    left: 594px; 
+}.black-key:nth-child(8)
+{
+    left: 662px; 
+}.black-key:nth-child(9)
+{
+    left: 797px; 
+}.black-key:nth-child(10)
+{
+    left: 865px; 
+}
+@media (max-width: 768px)
+{
+#piano{
+    width: 335px;
+}
+.keys{
+    width: 318px;
+}
+.black-key:nth-child(1)
+{
+    left: 28px; 
+}
+.black-key:nth-child(2)
+{
+    left: 99px; 
+}
+.black-key:nth-child(3)
+{
+    left: 235px; 
+}
+.black-key:nth-child(4)
+{
+    left: 302px; 
+}.black-key:nth-child(5)
+{
+    left: 371px; 
+}.black-key:nth-child(6)
+{
+    left: 507px; 
+}.black-key:nth-child(7)
+{
+    left: 576px; 
+}.black-key:nth-child(8)
+{
+    left: 644px; 
+}.black-key:nth-child(9)
+{
+    left: 779px; 
+}.black-key:nth-child(10)
+{
+    left: 847px; 
+}
+
+}
+@media (max-width:1199px) and (min-width:769px)
+{
+    #piano{
+        width:765px
+    }
+    .keys{
+        width: 633px;
+    }
+}
