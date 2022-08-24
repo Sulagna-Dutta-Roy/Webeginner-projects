@@ -80,8 +80,8 @@ div ul div div img {
 
 .card_content {
   padding: 1rem;
-  min-height: none;
-  max-height: 100px;
+  min-height: none; 
+  max-height: 100px; /* Change this to change the height of written content*/
   overflow:inherit;
 }
 
