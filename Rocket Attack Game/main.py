@@ -118,7 +118,9 @@ def pause():
             if event.type == pygame.KEYUP:
                 if event.key == pygame.K_p:
                     running = False
+                    mixer.music.play()
         pygame.display.update()
+
             #
         
         
@@ -159,7 +161,10 @@ while running:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0
             if event.key == pygame.K_p:
+                mixer.music.pause()
                 pause()
+            if event.key == pygame.K_q:
+                exit()
 
     # 5 = 5 + -0.1 -> 5 = 5 -0.1
     playerX += playerX_change
@@ -214,3 +219,6 @@ while running:
     player(playerX, playerY)
     show_score(textX,textY)
     pygame.display.update()
+
+
+pygame.QUIT()
