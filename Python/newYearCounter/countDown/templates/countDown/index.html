@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IsitNewYear's?</title>
+        <link href="{% static 'countDown/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        {% if newYear %}
+            <center><h1>🥳 It's NEW YEAR buddy 🥳</h1></center>
+        {% else %}
+            <!-- <h1>NO</h1> -->
+            <center><h1>{{ remDays }}</h1><h2>Days To Go</h2></center>
+        {% endif %}
+    </body>
+</html>

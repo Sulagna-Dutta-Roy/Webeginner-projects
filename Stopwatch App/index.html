@@ -1,19 +1,60 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>StopWatch App</title>
-        <meta name="viewport" content="initial-scale=1.0,user-scalable=yes">
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascipt StopWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
 <body>
-    <div class="box">
-        <h1>Vanilla Stopwatch Javascript App</h1>
-        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
-        <button id="start">Start</button>
-        <button id="reset">Reset</button>
-        <button id="stop">Stop</button>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">StopWatch</span>
+        </div>
+    </nav>
+
+    <div class="container my-4 text-center" style="width: 40rem;">
+        <div class="card-body">
+            <h3 class="card-title">Stop Watch</h5><br>
+            <h1 id="curTime"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>:<span
+                    id="mils">00</span></h1>
+            <p class="card-text">Flag the time whenever you want!!</p>
+            <button class="btn btn-primary" id="btn-start">Start</button>
+            <button class="btn btn-success" id="btn-flag">Flag</button>
+            <button class="btn btn-warning" id="btn-stop">Stop</button>
+            <button class="btn btn-danger" id="btn-reset">Reset</button>
+        </div>
     </div>
-    <script src="./script/script.js"></script>
-    </body>
+
+    <div class="container">
+        <h5>My Flags</h1>
+        <table class="table table-striped table-dark table-hover text-center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Flag Time</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="stopwatch.js"></script>
+
+</body>
 </html>
