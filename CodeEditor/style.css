@@ -1,0 +1,103 @@
+/* styling the code editor */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d1e22;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* box-shadow: -1px 4px 5px 0px #fffdfd; */
+    margin-bottom: 25px;
+
+}
+
+.editor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.editor #html-code {
+    width: 39%;
+    height: 30%;
+    position: absolute;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.editor #css-code {
+    position: absolute;
+    width: 39%;
+    height: 30%;
+    top: 35%;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.editor #js-code {
+    position: absolute;
+    bottom: 0;
+    width: 39%;
+    height: 30%;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.editor #output {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #fffdfd;
+    font-size: 18px;
+    text-align: left;
+}
+
+.editor .heading {
+    position: absolute;
+    color: white;
+}
+
+.html {
+
+    top: -46px;
+    left: 10%;
+    margin: 20px;
+}
+
+.css {
+    bottom: 65%;
+    left: 12%;
+}
+
+.js {
+
+    bottom: 30%;
+    left: 10%;
+}
+
+.output {
+    right: 25%;
+    top: -25px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: beige;
+}
