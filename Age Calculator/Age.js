@@ -24,5 +24,5 @@ function age() {
     var m = m2 - m1;
     var y = y2 - y1;
   
-    document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days';
+    document.getElementById('age').innerHTML = 'You are '+y+' Years '+m+' Months '+d+' Days Old';
   }
