@@ -8,7 +8,7 @@
     display:flex;
     width:600px;
     margin:auto;
-    margin-top:10%;
+    margin-top:5%;
     margin-bottom:10%;
     align-items:center;
     justify-content:center;
@@ -54,7 +54,6 @@ button:hover{
 }
 #age{
     font-size:50px;
-    padding:100px;
     text-align:center;
     color: aqua;
 }
