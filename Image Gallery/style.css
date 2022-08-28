@@ -20,6 +20,13 @@ body{
     width: 100%;
     min-height: 100vh;    
 }
+img {
+    border-radius: 10%;
+  }  
+.box:hover {
+    transform: scale(1.05);
+  }
+  
 .wrapper{
     width: 80%;
     padding: 30px 0;

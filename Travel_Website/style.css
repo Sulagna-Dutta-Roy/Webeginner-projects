@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.top-bar {
+    padding: 8px;
+    background-color: #1c648b;
+}
+
+.logo {
+    width: 13vh;
+    height: 13vh;
+}
+
+.navbar {
+    background-color: #000000;
+    /* box-shadow:inset -1px -1px 5px 7px #e28743; */
+
+}
+
+.banner-img {
+    height: 600px;
+}
+
+.item img {
+    height: 70vh;
+}
+
+.owl-next {
+    position: absolute;
+    right: 0 !important;
+    top: 40%;
+
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(237, 225, 221) !important;
+    color: white;
+    border-radius: 50px !important;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 0 !important;
+    top: 40%;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(237, 225, 221) !important;
+    color: white;
+    border-radius: 50px !important;
+}
+
+.owl-two .owl-item img {
+    border-radius: 50%;
+
+}
+
+.benefit {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    background-color: #1c648b;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.benefit .image img {
+    float: left;
+    margin: 25px;
+}
+
+.benefit .title {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ec7c24;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.benefit .desc {
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 0.9rem;
+}
+
+.benefit:hover {
+    background-color: black;
+}
+
+.owl-two img {
+    width: 100%;
+    height: 40vh;
+}
+
+.heading {
+    margin: 5% 5px;
+    font-size: 2.2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+.top {
+    background-color: #1c648b !important;
+}
+
+.top .heading {
+    color: white;
+}
+
+
+
+.top .card:hover {
+    transition: .2s ease-in-out;
+    -webkit-transform: scale(1.05);
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.tour {
+    background-color: #edecec;
+    padding: 4rem 1rem;
+}
+
+
+.tour .heading {
+
+    margin: 10px 5px;
+    font-size: 2.2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+.tour .sec-heading {
+
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(159, 5, 5);
+}
+
+.tour p {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1rem;
+}
+
+.offers {
+
+    width: 100%;
+    height: 70vh;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    filter: brightness(50%);
+    background-attachment: fixed;
+
+}
+
+.offer-card {
+
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffa35f;
+
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.offer-card .heading {
+
+    margin: 5px;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+.offer-card .sec-heading {
+    font-size: 1.5rem;
+    color: #1c648b;
+    font-weight: 700;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 30px 10px;
+    margin-top: 30px;
+}
+
+.footer .footer-item {
+    list-style-type: none;
+}
+
+.footer .footer-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Merriweather', 'Sans&family';
+}
+
+.footer .footer-item a:hover {
+    color: #1c648b;
+}
+
+
+.content h6 {
+    font-size: 1.5rem;
+    padding: 10px 2px;
+}
+
+.content p {
+    font-family: 'Merriweather', 'Sans&family';
+    word-spacing: 5px;
+}
+ 
+.theme .pic {
+    margin: 10px;
+    background: black;
+    overflow: hidden;
+    border-radius: 10px;
+    position:relative;
+}
+
+.theme img {
+    width: 23vw;
+    height: 35vh;
+
+}
+
+.theme img:hover {
+    object-fit: cover;
+    opacity: 0.4;
+
+}
+
+.theme h6{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color:rgb(236, 124, 36 ,0.7);
+  
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.pakage{
+  background-color: #ec7c24;
+}
+
+
+a {
+    color: #363636;
+}
+.btn {
+    background: transparent;
+    margin: 3px;
+    border: 1px solid #eaeaea;
+    border-radius: 0px;
+}
+.btn:hover {
+    background: #eaeaea;
+    color: black;
+}
+
+ .tourcard {
+ transition: all .3s ease-in-out;
+  background: #fff;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  flex: 0 1 360px;
+  margin: 15px;
+  padding: 0;
+}
+.tourcard:hover {
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,.5);
+  cursor: pointer;
+}
+ .tourcard figure {
+    margin: 0;
+    padding: 0;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.tourpic {
+  background: #444;
+  position: relative;
+}
+.tourbtn {
+    margin: 0;
+    padding: 0;
+}
+.tourbtn:after {
+    clear: both;
+}
+ .tourcard figure .tourpic img {
+   transition: all .3s ease-in-out;    
+   width: 100%;
+   height: 40vh;
+  margin: 0;
+  padding: 0;
+  opacity: .9;
+}
+.tourcard:hover figure .tourpic img {
+    opacity: 0.50;
+}
+ .tourcard figure .tourpic .tourcat {
+  color: rgb(222, 222, 222);
+  font-size: .8em;
+  padding: 3px 5px;
+  position: absolute;
+  right: 15px;
+  text-transform: uppercase;
+  bottom: 15px;
+}
+.tourcard figure .tourpic .tourday {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: .8em;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  padding: 3px 5px;
+}
+ .tourcard figure .tourpic .tourday.hot {
+  background: #000;
+  background: red;
+  background: -webkit-linear-gradient(0deg,red,orange);
+  background: linear-gradient(90deg,red,orange);
+  background-size: 200% 200%;
+  -webkit-animation: hot 10s ease infinite;
+  -moz-animation: hot 10s ease infinite;
+  -o-animation: hot 10s ease infinite;
+  animation: hot 10s ease infinite;
+}
+ .tourcard figure .tourbtn {
+  background: transparent;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-content: center;
+}
+ .tourcard figure .tourbtn a {
+  flex: 1;
+}
+.tourcard figure figcaption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  margin: 0 0 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  color: rgb(245, 234, 234);
+}
+figcaption h3 a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(148, 147, 147, 0.5);
+    
+}
+.description {
+    color:#fffefd;
+    font-weight: 600;
+    opacity: 0;
+    display: none;
+}
+.tourprice {
+    opacity: 0;
+    display: none;
+    font-size: .8em;
+}
+.currency {
+    font-weight: 500;
+}
+.price {
+    font-size: 2em;
+    font-weight: 500;
+}
+.tourcard:hover figure figcaption .description,
+.tourcard:hover figure figcaption .tourprice {
+    display: block;
+    opacity: 1;
+}
