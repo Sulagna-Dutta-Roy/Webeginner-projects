@@ -94,6 +94,40 @@ def isCollision(enemyX, enemyY, bulletX, bulletY):
         return True
     else:
         return False
+def isGameOver(enemyX,enemyY,playerX,playerY):
+    distance = math.sqrt(math.pow(enemyX-playerX,2)+math.pow(enemyY-playerY,2))
+    if(distance<27):
+        return True
+    else:
+        return False
+def dispGameOver():
+    end_ = font.render("Game Over",True,(128,128,128))
+    screen.blit(end_,(300,300))
+
+
+def pause():
+    running = True
+    while running:
+        pause_ = font.render("Game Paused",True,(255,255,255))
+        screen.blit(pause_,(300,300))
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+        # keystroke direction check
+            if event.type == pygame.KEYUP:
+                if event.key == pygame.K_p:
+                    running = False
+                    mixer.music.play()
+        pygame.display.update()
+
+            #
+        
+        
+        
+        
+        
+    
 
 
 # Game loop
@@ -126,6 +160,11 @@ while running:
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0
+            if event.key == pygame.K_p:
+                mixer.music.pause()
+                pause()
+            if event.key == pygame.K_q:
+                exit()
 
     # 5 = 5 + -0.1 -> 5 = 5 -0.1
     playerX += playerX_change
@@ -137,6 +176,7 @@ while running:
 
     # enemy boundry set
     for i in range(no_of_enemies):
+        
 
         enemyX[i] += enemyX_change[i]
 
@@ -146,6 +186,14 @@ while running:
         elif enemyX[i] >= 736:
             enemyX_change[i] = -2
             enemyY[i] += enemyY_change[i]
+        if(enemyY[i]>750):
+            enemyY[i] = math.random(50,190)
+
+        #GameOver
+        if(isGameOver(enemyX[i],enemyY[i],playerX,playerY)):
+            dispGameOver()
+            running = False
+            break
 
         # Collision
         collision = isCollision(enemyX[i], enemyY[i], bulletX, bulletY)
@@ -156,8 +204,8 @@ while running:
             bullet_state = "ready"
             score_value += 1
             #print(score_value)
-            enemyX[i] = random.randint(0, 800)
-            enemyY[i] = random.randint(50, 150)
+            enemyX[i] = random.randint(10, 750)
+            enemyY[i] = random.randint(50, 190)
 
         enemy(enemyX[i], enemyY[i], i)
 
@@ -168,9 +216,9 @@ while running:
     if bullet_state is "fire":
         fire_bullet(bulletX, bulletY)
         bulletY -= bulletY_change
-
-    
-
     player(playerX, playerY)
     show_score(textX,textY)
     pygame.display.update()
+
+
+pygame.QUIT()
