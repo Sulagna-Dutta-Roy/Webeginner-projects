@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Balsamiq+Sans" type="text/css">
+        <title>Menu | David Chu's China Bistro</title>
+    </head>
+    
+    <body onload="myFunction()">
+        <div id="loading"></div>
+        <header>
+            <nav class="navbar navbar-default" id="header-nav">
+                <div class="container-fluid" id="top-heading">
+            
+                    <div class="navbar-header">
+                        <a href="index.html" class="pull-left visible-md visible-lg">
+                            <div id="logo-img" alt="Logo image"></div>
+                        </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <div class="navbar-brand">
+                            <a href="#">
+                                <h1>David Chu's China Bistro</h1>
+                            </a>
+                            <p>
+                            <img src="Images/Home/star-k-logo.png" alt="Kosher certification">
+                            <span>Kosher Certified</span>
+                        </p>
+                        </div>
+                    </div>
+                
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+                            <li class="visible-xs">
+                                <a href="index.html">
+                                    <span class="glyphicon glyphicon-home"></span>
+                                    <br class="hidden-xs"> Home
+                                </a>
+                            </li>  
+
+                            <li class="active">
+                                <a href="menu-categories.html">
+                                    <span class="glyphicon glyphicon-cutlery"></span>
+                                    <br class="hidden-xs"> Menu
+                                </a>
+                            </li>    
+
+                            <li>
+                                <a href="about.html">
+                                    <span class="glyphicon glyphicon-info-sign"></span>
+                                    <br class="hidden-xs"> About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="awards.html">
+                                    <span class="glyphicon glyphicon-certificate"></span>
+                                    <br class="hidden-xs"> Awards
+                                </a>
+                            </li>
+
+                            <li id="phone" class="hidden-xs">
+                                <a href="tel:410-602-5008">
+                                    <span>410-602-5008</span>
+                                </a>
+                                <div>* We Deliver</div>
+                            </li>
+
+                        </ul>      
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="call-btn" class="visible-xs">
+            <a href="tel:410-602-5008" class="btn">
+                <span class="glyphicon glyphicon-earphone"></span>
+                410-602-5008
+            </a>
+        </div> 
+
+        <div id="xs-deliver" class="text-center visible-xs">
+            * We Deliver
+        </div>
+
+        <div id="main-content" class="container">
+            <h2 id="menu-categories-title" class="text-center">
+                Menu Categories
+            </h2>
+            <div class="text-center">
+                Substituting White Rice with Brown Rice or fried rice after 3:00 PM will be $1.50 for a pint and $2.50 for a quart.
+            </div>
+
+            <section class="row">
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Appetizers.jpg" alt="Appetizers" width="200" height="200">
+                            <span>Appetizers</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Beef.jpg" alt="Beef" width="200" height="200">
+                            <span>Beef</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Chef's Recommendations.jpg" alt="Chef's recommendations" width="200" height="200">
+                            <span>Chef's recommendations</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Chicken.jpg" alt="Chicken" width="200" height="200">
+                            <span>Chicken</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Single/Chowmein.jpg" alt="Chowmein" width="200" height="200">
+                            <span>Chowmein</span>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Curry.jpg" alt="Curry" width="200" height="200">
+                            <span>Curry</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Desserts.jpg" alt="Desserts" width="200" height="200">
+                            <span>Desserts</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Dinner Combo.jpg" alt="Dinner Combo" width="200" height="200">
+                            <span>Dinner Combo</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Duck.jpg" alt="Duck" width="200" height="200">
+                            <span>Duck</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Egg Yoo Young.jpg" alt="Egg yoo young" width="200" height="200">
+                            <span>Egg yoo young</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Fried Rice.jpg" alt="Fried Rice" width="200" height="200">
+                            <span>Fried Rice</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Lunch.jpg" alt="Lunch" width="200" height="200">
+                            <span>Lunch</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Mei Fan.jpg" alt="Mei Fan (Very Fine Noodles)" width="200" height="200">
+                            <span>Mei Fan (Very Fine Noodles)</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Noodles.jpg" alt="Noodles" width="200" height="200">
+                            <span>Noodles</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Pan Fried Noodles.jpg" alt="Pan Fried Noodles" width="200" height="200">
+                            <span>Pan Fried Noodles</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Side Orders.jpg" alt="Side Orders" width="200" height="200">
+                            <span>Side Orders</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Soup.jpg" alt="Soup" width="200" height="200">
+                            <span>Soup</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Sushi.jpg" alt="Sushi Menu" width="200" height="200">
+                            <span>Sushi Menu</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Veal.jpg" alt="Veal" width="200" height="200">
+                            <span>Veal</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <a href="single-category.html">
+                        <div class="category-tile">
+                            <img src="Images/Menu/Vegetables.jpg" alt="Vegetables" width="200" height="200">
+                            <span>Vegetables</span>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+        </div>
+
+        <footer class="panel-footer">
+            <div class="container">
+                <div class="row">
+                    <section id="hours" class="col-sm-4">
+                        <span>Hours :</span>
+                        <br>Sun - Thu : 11:15AM - 10:00PM
+                        <br>Fri : 11:15AM - 2:30 PM
+                        <br>Sunday Closed
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="address" class="col-sm-4">
+                        <span>Address :</span>
+                        <br>7105 Reisterstown Road
+                        <br>Baltimore, MD 21215
+                        <p>
+                            * Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.
+                        </p>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="testimonials" class="col-sm-4">
+                        <p>
+                            "The best Chinese Restaurant I've been to! And that's saying a lot, since I've been to many!"
+                        </p>
+                        <p>
+                            "Amazing Food! Great Service! Couldn't ask for more! I'll be back again and again!"
+                        </p>
+                    </section>
+                </div>
+                <div class="text-center">
+                    &copy; Copyright David Chu's China Bistro 2015
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            var preLoader = document.getElementById('loading');
+            function myFunction () {
+                preLoader.style.display = 'none';
+            }
+        </script>
+
+    </body>
+</html>
