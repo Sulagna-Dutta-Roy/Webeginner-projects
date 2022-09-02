@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 22vh;
+    height: 12vh;
     width:100%;
     box-shadow: 0 2px 3px black;
     background-color: #e3c8e3;
@@ -22,6 +22,7 @@
     font-size: 2.6rem;
     font-weight: bold;
     font-family:sans-serif;
+    padding-top: .5cm;
   }
   .button-menu{
     width:100%;
@@ -53,10 +54,39 @@
   }
   textarea{
     border:5px solid #987798;
-  
     box-shadow: 0 3px 4px black;
     font-size: 18px;
     padding: 10px;
     indent:0;
     
   }
+  footer {
+    padding-top: 2cm;
+    color: #a887b1;
+    text-align: center;
+  
+  }
+
+  .social-icons{
+      padding-top: 1.5em;
+    background-color: #a887b1;
+    height: 1.7cm;
+  }
+
+.fa-instagram{
+  padding-left: .5cm;
+  color:rgb(190, 16, 112)
+}
+.fa-twitter{
+  padding-left: .5cm;
+  color:rgb(24, 161, 224)
+}
+.fa-linkedin{
+  padding-left: .5cm;
+  color:rgb(52, 17, 250)
+}
+.fa-facebook{
+  padding-left: .5cm;
+  color:rgb(72, 62, 209)
+}
+
