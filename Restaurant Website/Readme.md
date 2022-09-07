@@ -3,10 +3,13 @@
 
 Here you can find the details of Restaurant like Menu Card, Contact Details etc.
 
+![Screenshot (294)](https://user-images.githubusercontent.com/88129955/188801450-6314b5d0-2fb9-4fe8-999e-d386d10a252b.png)
 
-![Screenshot (294)](https://user-images.githubusercontent.com/88129955/188308723-871a21bc-28eb-40a4-832f-f51321c196e4.png)
-![Screenshot (295)](https://user-images.githubusercontent.com/88129955/188308731-acc752ed-48d5-4c15-91e1-04a86845b3af.png)
-![Screenshot (296)](https://user-images.githubusercontent.com/88129955/188308735-81190d7d-9da4-4901-b02a-7a36d6bbd3ed.png)
-![Screenshot (297)](https://user-images.githubusercontent.com/88129955/188308740-352a15b6-cacf-4871-929f-9f448f20755e.png)
-![Screenshot (298)](https://user-images.githubusercontent.com/88129955/188308743-8ff7a217-b0b5-4efd-acb6-011d31f8c343.png)
-![Screenshot (299)](https://user-images.githubusercontent.com/88129955/188308747-95244956-5deb-4b91-a8e6-d57dc1d60717.png)
+![Screenshot (295)](https://user-images.githubusercontent.com/88129955/188801490-b4934733-89ab-4ccc-a50a-9bcb6601fad9.png)
+
+![Screenshot (296)](https://user-images.githubusercontent.com/88129955/188801551-97b34482-f9b5-4e93-b6c8-3acc45e94d1a.png)
+
+![Screenshot (297)](https://user-images.githubusercontent.com/88129955/188801578-af6a0b5e-83e0-4600-8436-e8df83af60a3.png)
+
+![Screenshot (298)](https://user-images.githubusercontent.com/88129955/188801604-ee4c3401-532a-4116-abaa-eec67dcd8035.png)
+
