@@ -11,5 +11,7 @@ ToDo List App is a kind of web-app that generally used to maintain our day-to-da
 - Js
 
 ## Deployment screenshot/Link:
+[Demo](https://iamrahul8.github.io/Todo-List-Web-app/)
 
+![image](https://user-images.githubusercontent.com/72541381/189414511-46d5c5c8-f950-4d50-8c90-c48a1dd09219.png)
 
