@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=VT323&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("images/Space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Nunito Sans", monospace;
+  height: 100vh;
+}
+nav {
+  background-color: #5f6f94;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  color: WHITE;
+}
+nav > h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+nav > .inputs {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.inputs > p {
+  font-weight: 600;
+  font-size: 20px;
+}
+#planets {
+  font-family: "Nunito Sans", sans-serif;
+  height: 30px;
+}
+section {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 2% 5%;
+}
+#planet-img {
+  width: 60%;
+}
+
+button {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 3px 5px;
+  border: none;
+  width: 100%;
+  margin-top: 5%;
+}
+button:hover {
+  border: 2px solid #ffffff;
+  background-color: black;
+  color: white;
+}
+.answer p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #5f6f94;
+  padding: 2% 4%;
+  width: 100%;
+}
+label {
+  font-size: 20px;
+}
+input {
+  height: 25px;
+  border: none;
+  padding: 2px;
+  font-weight: 600;
+}
+span {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    background-color: #5f6f94;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: WHITE;
+  }
+  nav > h1 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .inputs > p {
+    font-size: 18px;
+  }
+  label {
+    font-size: 18px;
+  }
+  button {
+    width: 50%;
+    font-size: 16px;
+  }
+}
