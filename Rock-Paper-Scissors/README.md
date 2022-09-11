@@ -4,4 +4,10 @@ In this game, there will be 2 players: the user and the computer. The user will 
 # Tech Stack
 HTML , CSS and JavaScript
 # Screenshots
+![screenshot](./Images/Screenshot-1.png)
+
+![screenshot](./Images/Screenshot-2.png)
+
+![screenshot](./Images/Screenshot-3.png)
+
 
