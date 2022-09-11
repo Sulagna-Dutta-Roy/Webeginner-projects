@@ -1,33 +1,38 @@
-body
-{
-    background-color: lightcoral;
-    height: 100vh;
+.heading {
+  font-family: 'Pacifico', cursive;
 }
-.box
-{
-    text-align: center;
+
+body {
+  background-color: #40DFEF;
 }
-.box h1
-{
-    margin: 30px auto;
+
+table {
+  font-size: 1.5rem;
 }
-.box p
-{
-    font-size: 50px;
-    margin: 40px auto;
+
+.timer {
+  width: 300px;
+  height: 145px;
+  background-color: white;
+  border: 10px ridge black;
 }
-button
-{
-    font-size: 30px;
-    border-radius: 3px;
-    margin: 60px auto;
-    width: 90px;
-    margin-right: 10px;
-    outline: none;
-    color: #000;
+
+.box {
+  text-align: center;
 }
-button:hover
-{
-    color: lightcoral;
-    border: 1px solid #fff;
+
+.box h1 {
+  margin: 30px auto;
+}
+
+.box p {
+  font-size: 80px;
+  margin: 40px auto;
+}
+
+.btn {
+  margin: 5px 5px;
+  font-size: 1.5rem;
+  font-family: 'Cinzel', serif;
+  width: 150px;
 }

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 50px;
+    background-image: url(bg3.jpg);
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    font-family: monospace;
+}
+.pic{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.pic img{
+    border: 1px solid rgb(66, 60, 60);
+    border-radius: 50%;
+    padding: 5px;
+    width: 150px;
+    
+}
+.nm {
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* font-family: 'Merriweather', serif; */
+    /* margin-top: 1rem; */
+    /* margin-bottom: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5;
+    font-size: 1.2rem;
+}
+#nam{
+    color: #0a9396;
+}
+#man{
+    color: #e85d04;
+}
+.container{
+    margin-top: 2.2rem;
+
+}
+#one{
+    /* font-family: 'Merriweather', serif; */
+    text-align: center;
+    color: #fff;
+    background-color:#0a9396;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.main{
+    margin-top: 80px;
+}
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.fstyle{
+    color: aquamarine;
+    text-align: center;
+}
+.link{
+    color: #fff;
+    text-decoration: none;
+}
+.link:hover{
+    color: rgba(255, 255, 255, 0.732);
+}
