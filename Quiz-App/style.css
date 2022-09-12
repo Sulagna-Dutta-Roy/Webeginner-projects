@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dabc95;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+.heading{
+    text-align: center;
+    padding:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: azure;
+}
+ .main-dev{
+    width: 100vw;
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+ }
+.inner-section{
+   
+    padding: 3rem 8rem;
+    background-color: rgb(255, 255, 255);
+    padding:20px 25px;
+   border-radius: 1rem;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.inner-section .question{
+    margin-bottom:20px;
+    font-size: 1.4rem;
+
+}
+.inner-section li{
+    list-style-type: none;
+    margin: 10px;
+    font-size: 1rem;
+} 
+input{
+    cursor: pointer;
+}
+#submit ,.btn{
+  padding: 0.8rem 1.8rem;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+  display: block;
+  margin:auto;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  background-color: #795548;
+  cursor: pointer;
+}
+#submit:hover{
+    background-color: #343333;
+}
+.footer{
+    text-align: center;
+  
+    font-family: cursive;
+}
+
+#showScore{
+    background-color: #606060;
+    margin-top: 1rem;
+    padding:1rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.scoreArea{
+    display: none;
+}
+#showScore .btn{
+    background-color: #ed8e53;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top:10px;
+}
+#showScore .btn:hover{
+    background-color: #be0404;
+}
