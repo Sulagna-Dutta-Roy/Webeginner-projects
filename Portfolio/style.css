@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color:rgb(215, 247, 249) ;
+   
+    font-weight: 600;
+   font-size: 1.2rem;
+   
+}
+.banner{
+   
+    padding: 30px 10px ;
+   /* background:url("banner.jpg") no-repeat fixed center bottom; */
+	
+    background: url("images/bg.gif") no-repeat fixed center bottom;
+	background-size: cover;
+    color: #fff;
+   
+}
+.banner img{
+    width:300px;
+    height: 300px;
+    background-color: rgb(242, 253, 203);
+   border-radius: 50%;
+   margin: 20px 10px;
+    
+}
+.banner .content{
+    padding-top:20%;
+}
+.banner .content h1{
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: rgb(230, 232, 232);
+
+}
+.banner .content p{
+    font-size: 2.5rem;
+    line-height: 1;
+
+}
+.skill{
+    background-color: white;
+    background-size: contain;
+    padding:30px 20px;
+
+}
+.skill img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+.card img{
+    background-color:black;
+}
+.about-img{
+    width: 100%;
+    height: 100%;
+}
+.about{
+    background-color: rgb(149, 219, 246);
+    
+}
+/* footer */
+/* ========================
+Footer
+======================== */
+
+footer {
+    background-color: #3b6b69;
+    color:  #fff;
+    font-size: 1.5em;
+    text-align: center;
+    padding:3%;
+  }
+  a.tel,a.tel:hover
+  {
+    text-decoration:none;
+    color:#fff;
+  }
+  a.social-button {
+      background: #fff;
+      font-size: 20px;
+      border-radius: 50%;
+      margin: 5px;
+  }
+  .address-container{
+      display: inline-block;
+      margin: 0 auto;
+  }
+  a.link-facebook,a.link-twitter,a.link-codepen,a.link-linkedin,a.link-instagram
+  {
+    transition:0.4s ease;
+  }
+  a.link-twitter
+  {
+    color:#1DA1F2;
+  }
+  a.link-facebook
+  {
+   color: #3b5998;
+  }
+  a.link-linkedin
+  {
+    color:#007bb6;
+  }
+  a.link-instagram
+  {
+    color:#e95950;
+  }
+  a.link-facebook:hover{
+      background-color: #3b5998;
+      color: #fff;
+  }
+  
+  a.link-twitter:hover{
+      background-color: #1DA1F2;
+      color: #fff;
+  }
+  
+  a.link-codepen:hover{
+      background-color: black;
+      color: #fff;
+  }
+  
+  a.link-linkedin:hover{
+      background-color: #007bb6;
+      color: #fff;
+  }
+  a.link-instagram:hover{
+      background-color: #e95950;
+      color: #fff;
+  }
+  .btn-default {
+      color: #333;
+      background-color: #fff;
+      border-color: transparent!important;
+  }
+  .fa-heart {
+    color:#f32323;
+  }
+  h4.author
+  {
+    letter-spacing:4px;
+  }
+  hr.footer-hr
+  {
+    width:50%;
+  }
+  hr.copyright
+  {
+    opacity:0.4;
+  }

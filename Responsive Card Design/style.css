@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black !important;
+}
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#allBlogs{
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+div ul div div img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #0a0a0a !important; 
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content:space-evenly;
+  margin: 5px 5px;
+  width: 97%;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12); 
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+
+  flex-direction: column;
+  overflow: hidden;
+  background-image: cover;
+}
+
+.card_content {
+  padding: 1rem;
+  min-height: none; 
+  max-height: 100px; /* Change this to change the height of written content*/
+  overflow:inherit;
+}
+
+.card_title {
+  color: #040404;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #000000;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+  
+}
