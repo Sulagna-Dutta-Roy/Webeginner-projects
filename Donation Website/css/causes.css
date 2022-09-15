@@ -1,0 +1,143 @@
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+
+.page-header {
+    height: 100vh;
+    position: relative;
+    margin-bottom: 45px;
+    padding: 300px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/page-header.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 3000px #1c1c1c7a;
+}
+
+.page-header h2 {
+    position: relative;
+    color: rgba(252, 74, 74, 1);
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.page-header h2::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 4px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    background: rgba(252, 74, 74, 1);
+}
+
+@media (max-width: 991.98px) {
+    .page-header {
+        padding: 60px 0;
+    }
+    
+    .page-header h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-header {
+        padding: 130px 0;
+    }
+    
+    .page-header h2 {
+        font-size: 35px;
+    }
+}
+
+/*******************************/
+/******* Causes CSS *******/
+/*******************************/
+
+.slider-card {
+    box-shadow: 0 15px 45px -20px #222;
+    transform: scale(0.9);
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.slider-card .slider-img {
+    overflow: hidden;
+}
+
+.slider-card img {
+    height: 270px;
+    width: 100%;
+    transition: .3s;
+}
+
+.slider-card:hover img {
+    transform: scale(1.1);
+    height: 270px;
+}
+
+.slider-card h5 {
+    color: #4a4c70;
+    text-align: left;
+    margin: 5px 0px 15px 20px;
+    font-size: 22px;
+}
+
+.slider-card p {
+    padding: 0 20px 3px 20px;
+    font-size: 18px;
+}
+
+.causes-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(252, 74, 74, 1);
+}
+
+.causes-btn .btn {
+    padding: 10px 0;
+    width: 50%;
+    border: 0;
+}
+
+.causes-btn .btn:first-child:hover {
+    background-color: rgba(252, 74, 74, 1);
+    border-radius: 0;
+    color: #20212B;
+}
+
+.causes-btn .btn:last-child {
+    color: #20212B;
+    background: rgba(252, 74, 74, 1);
+    border-radius: 0;
+}
+
+.causes-btn .btn:last-child:hover {
+    color: #fff;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+    color: #4a4c70 !important;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    color: #4a4c70 !important;
+    z-index: 1;
+}
