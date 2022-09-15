@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume Generator</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- form  -->
+    <div id="cv-form">
+      <div class="header text-center bg-dark text-light py-2">
+        <h2>Resume Generator</h2>
+        <p class="text-warning">By Rishika Vishnoi 😊</p>
+      </div>
+
+      <div class="container mt-3">
+        <div class="row">
+          <!-- colume 1 -->
+
+          <div class="col-md-6 mt-2">
+            <h3>Personal Details</h3>
+
+            <div class="from-group mt-4">
+              <label for="">Select your photo *</label>
+              <input id="imgField" type="file" class="form-control" />
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="namefield"> Your Name</label>
+              <input
+                type="text"
+                id="namefield"
+                class="form-control"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="contactfield"> Your Contact No.</label>
+              <input
+                type="number"
+                id="contactfield"
+                class="form-control"
+                placeholder="Enter your Contact name"
+              />
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="emailfield"> Your Email Id</label>
+              <input
+                type="email"
+                id="emailfield"
+                class="form-control"
+                placeholder="Enter your email id "
+              />
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="addressfield">Your Address</label>
+              <textarea
+                rows="4"
+                class="form-control"
+                placeholder="Enter your Address"
+                id="addressfield"
+              ></textarea>
+            </div>
+
+            <h3 class="text-warning mt-3">Social Link</h3>
+
+            <div class="form-group mt-2">
+              <label for="githubfield">Github Link</label>
+              <input
+                type="text"
+                id="githubfield"
+                class="form-control"
+                placeholder="Enter your Github Profile link"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="linkedinfield"> LinkedIn Link</label>
+              <input
+                type="text"
+                id="linkedinfield"
+                class="form-control"
+                placeholder="Enter your Linkedin Profile link"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="name"> Twitter Link</label>
+              <input
+                type="text"
+                id="twitterfield"
+                class="form-control"
+                placeholder="Enter your Twitter link"
+              />
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="name"> Personal Website Link</label>
+              <input
+                type="text"
+                id="websitefield"
+                class="form-control"
+                placeholder="Enter your Website link"
+              />
+            </div>
+          </div>
+
+          <!-- column 2 -->
+          <div class="col-md-6 mt-2">
+            <h3>Professional Details</h3>
+
+            <div class="form-group mt-4">
+              <label for="objfield">Objective</label>
+              <textarea
+                rows="4"
+                class="form-control"
+                placeholder="Enter  Objective "
+                id="objfield"
+              ></textarea>
+            </div>
+
+            <div class="form-group mt-2">
+              <label for="skillfield">Skills</label>
+              <textarea
+                rows="2"
+                class="form-control"
+                placeholder="Enter your Skill set"
+                id="skillfield"
+              ></textarea>
+            </div>
+
+            <div class="form-group mt-3" id="we">
+              <label for="">Work Experience</label>
+              <textarea
+                rows="3"
+                id="expfield"
+                class="form-control wefield"
+                placeholder="Enter your Work Experience"
+              ></textarea>
+
+              <!-- add new textarea by js -->
+              <div class="container text-center mt-2" id="weAddButton">
+                <button onclick="addNewExp()" class="btn btn-warning btn-sm">
+                  Add
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group mt-3" id="edu">
+              <label for="">Education</label>
+              <textarea
+                rows="3"
+                id="edufields"
+                class="form-control edufield"
+                placeholder="Enter your Education"
+              ></textarea>
+
+              <div class="container text-center mt-2" id="EAddButton">
+                <button onclick="addNewEdu()" class="btn btn-warning btn-sm">
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center my-4">
+          <button onClick="generateResume()" class="btn btn-warning btn-large">
+            Generate Resume
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Resume template-->
+
+    <div class="container-fluid" id="cv-template">
+      <div class="row">
+        <div class="col-md-4 text-center py-5 left-template">
+          <!-- first section -->
+
+          <img
+            id="my-img"
+            src=""
+            alt="image"
+            class="img-fluid myimg"
+          />
+          <div class="container">
+            <h1 id="nameT1"></h1>
+            <hr />
+            <p id="noT"></p>
+            <p id="addressT"></p>
+            <p id="emailT"></p>
+          </div>
+          <hr />
+
+          <p>
+            <a id="githubT" href="#"></a>
+          </p>
+          <p>
+            <a id="linkedinT" href="#"></a>
+          </p>
+          <p>
+            <a id="twitterT" href="#"></a>
+          </p>
+
+          <p>
+            <a id="websiteT" href="#"></a>
+          </p>
+        </div>
+
+        <div class="col-md-8 py-4">
+          <!-- second-section -->
+          <!-- <h1 id="nameT2" class="text-center" style="font-weight:980">
+            Rishika Vishnoi
+        </h1>
+       -->
+          <!-- objective  -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Objective</h3>
+            </div>
+            <div class="card-body">
+              <p id="objT"></p>
+            </div>
+          </div>
+
+          <!-- skill set -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Skills</h3>
+            </div>
+            <div class="card-body">
+              <p id="skillT"></p>
+            </div>
+          </div>
+
+          <!-- work experience -->
+
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Work Experience</h3>
+            </div>
+            <div class="card-body">
+              <ul id="weT">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education -->
+
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Eduacation</h3>
+            </div>
+            <div class="card-body">
+              <ul id="eduT">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container text-center mt-4">
+            <button onclick="printResume()" class="btn  btn-danger">
+              Print Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
