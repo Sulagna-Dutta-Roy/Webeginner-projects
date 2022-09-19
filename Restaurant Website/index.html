@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Balsamiq+Sans" type="text/css">
+        <title>David Chu's China Bistro</title>
+    </head>
+    
+    <body onload="myFunction()">
+        <div id="loading"></div>
+
+        <header>
+            <nav class="navbar navbar-default" id="header-nav">
+                <div class="container-fluid" id="top-heading">
+            
+                    <div class="navbar-header">
+                        <a href="index.html" class="pull-left visible-md visible-lg">
+                            <div id="logo-img" alt="Logo image"></div>
+                        </a>
+                        <button type="button" id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <div class="navbar-brand">
+                            <a href="index.html">
+                                <h1>David Chu's China Bistro</h1>
+                            </a>
+                            <p>
+                            <img src="Images/Home/star-k-logo.png" alt="Kosher certification">
+                            <span>Kosher Certified</span>
+                        </p>
+                        </div>
+                    </div>
+                
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+                            <li class="visible-xs">
+                                <a href="index.html">
+                                    <span class="glyphicon glyphicon-home"></span>
+                                    <br class="hidden-xs"> Home
+                                </a>
+                            </li>    
+
+                            <li>
+                                <a href="menu-categories.html">
+                                    <span class="glyphicon glyphicon-cutlery"></span>
+                                    <br class="hidden-xs"> Menu
+                                </a>
+                            </li>      
+
+                            <li>
+                                <a href="about.html">
+                                    <span class="glyphicon glyphicon-info-sign"></span>
+                                    <br class="hidden-xs"> About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="awards.html">
+                                    <span class="glyphicon glyphicon-certificate"></span>
+                                    <br class="hidden-xs"> Awards
+                                </a>
+                            </li>
+
+                            <li id="phone" class="hidden-xs">
+                                <a href="tel:410-602-5008">
+                                    <span>410-602-5008</span>
+                                </a>
+                                <div>* We Deliver</div>
+                            </li>                           
+                        </ul>      
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="call-btn" class="visible-xs">
+            <a href="tel:410-602-5008" class="btn">
+                <span class="glyphicon glyphicon-earphone"></span>
+                410-602-5008
+            </a>
+        </div> 
+
+        <div id="xs-deliver" class="text-center visible-xs">
+            * We Deliver
+        </div>
+
+        <div id="main-content" class="container">
+            <div class="jumbotron">
+                <img src="Images/Home/jumbotron_768.jpg" alt="Picture of Restaurant" class="img-responsive visible-xs">
+            </div>
+            <div id="home-tiles" class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu-categories.html">
+                        <div id="menu-tile">
+                            <span>Menu</span>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">
+                        <div id="specials-tile">
+                            <span>Specials</span>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <a href="https://goo.gl/maps/JqPVWuhz9HrfXWf99" target="blank">
+                        <div id="map-tile">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.6750632316516!2d-76.71387678513995!3d39.36359442693491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2sin!4v1625738471072!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="eager">
+                            </iframe>
+                            <span>Map</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="panel-footer">
+            <div class="container">
+                <div class="row">
+                    <section id="hours" class="col-sm-4">
+                        <span>Hours :</span>
+                        <br>Sun - Thu : 11:15AM - 10:00PM
+                        <br>Fri : 11:15AM - 2:30 PM
+                        <br>Sunday Closed
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="address" class="col-sm-4">
+                        <span>Address :</span>
+                        <br>7105 Reisterstown Road
+                        <br>Baltimore, MD 21215
+                        <p>
+                            * Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.
+                        </p>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="testimonials" class="col-sm-4">
+                        <p>
+                            "The best Chinese Restaurant I've been to! And that's saying a lot, since I've been to many!"
+                        </p>
+                        <p>
+                            "Amazing Food! Great Service! Couldn't ask for more! I'll be back again and again!"
+                        </p>
+                    </section>
+                </div>
+                <div class="text-center">
+                    &copy; Copyright David Chu's China Bistro 2015
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var preLoader = document.getElementById('loading');
+            function myFunction () {
+                preLoader.style.display = 'none';
+            }
+        </script>
+
+    </body>
+</html>

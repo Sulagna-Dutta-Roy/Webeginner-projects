@@ -11,7 +11,9 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(#a1c4fd,#09203f);
+    background-image: url(./backg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     /* background-image: linear-gradient(to right top, #051937, #088fa6, #03b9a7, #66c183); */
     /* background-color: #; */
@@ -110,23 +112,22 @@ form input:focus{
     display: inline-block;
     text-decoration: none;
     padding: 14px 24px;
-    color:#326ac4;
-    background-color: #fff;
-    transition: color .25s .5s;
-    transition: background-color .25s .5s;
+    color:#fff;
+    background-color: #326ac4;
     border: 1px solid #326ac4;
     
     font-size: 17px;
 
     cursor: pointer;
-
+   
     letter-spacing: 1px;
 
 }
 
 
 #btn:hover{
-    color: #fff;
-    background-color: #326ac4;
-   transition-delay: .25s;
+    color: #326ac4;
+    background-color: #fff;
+    border: 1px solid #326ac4;
+    transition:translateY(-10px);
 }

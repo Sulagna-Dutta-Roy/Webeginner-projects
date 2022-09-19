@@ -1,6 +1,7 @@
 body {
   background: #F5D9D5;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
 .blurb h2 {
