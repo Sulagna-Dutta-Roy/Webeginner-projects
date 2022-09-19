@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(22, 31, 53, 0.97);
+  
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+  
+    text-decoration: none;
+   
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+   margin: 0;
+  }
+  
+  
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: rgba(22, 31, 53, 0.97);
+    min-width: 560px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height:400px;
+   float:right;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .p{
+      width: 150px;
+      height: 60px;
+      mix-blend-mode: lighten;
+     
+  }
+  .g{
+      font-size: 24px;
+     margin-top: 14px;
+   margin-left: 1150px;
+  }
+
+  
+.s{
+  margin-left: 670px;
+}
+
+.k{
+  color:#fff;
+  font-size: 45px;
+  margin-top: -370px;
+  margin-left: 40px;
+}
+.t{
+  color:#fff;
+  font-size: 30px;
+margin-top: 20px;
+  margin-left: 40px;
+  font-family: Sanchez;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 92px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #026f94;
+   margin-left: 45px;
+   margin-top: 20px;
+} 
+
+
+.e{
+  margin-top: 15px;
+}
+.l{
+  background-color: #222; 
+  margin-left: 100px;
+  transform: rotate(90deg);
+ width:50%;
+ margin-top: -190px;
+ 
+
+}
+.d1{
+  margin-top: -190px;
+  margin-left: 300px;
+}
+.w{
+  margin-top: 200px;
+}
+
+.w1{
+  margin-left: 880px;
+  margin-top: -130px;
+}
+.k2{
+  color: #fff;
+  font-size: 45px;
+  margin-top: -570px;
+ 
+}
+.t2{
+  color: #fff;
+  font-size: 25px;
+margin-top: 20px;
+ 
+  font-family: Sanchez;
+}
+.y{
+  margin-top: 230px;
+}
+.k3{
+  color: #fff;
+  font-size: 45px;
+  margin-top: -520px;
+  margin-left: 40px;
+}
+.t3{
+  color: #fff;
+  font-size: 25px;
+margin-top: 20px;
+margin-left: 40px;
+  font-family: Sanchez;
+}
+.t4{
+  color: #fff;
+  font-size: 15px;
+margin-top: 20px;
+margin-left: 40px;
+  font-family: Sanchez;
+}
+.z{
+  margin-top: 130px;
+}
+.k4{
+  color: #fff;
+  font-size: 45px;
+  margin-top: -520px;
+  margin-left: 740px;
+}
+.t5{
+  color: #fff;
+  font-size: 25px;
+margin-top: 20px;
+margin-left: 740px;
+  font-family: Sanchez;
+}
+
+.r{
+  margin-top: 240px;
+  background-color: white;
+height:600px;
+  width: 1550px;
+}
+.i2{
+  margin-left: 130px;
+  margin-top: 40px;
+}
+.i3{
+  margin-left: 130px;
+}
+.i4{
+  margin-left: 130px;
+}
+.o{
+  margin-left: 150px;
+ font-size: 40px;
+}
+
+.o1{
+  margin-left: 410px;
+  margin-top: -230px;
+}
+.o2{
+  margin-left: 890px;
+  margin-top: -230px;
+}
+.g7{
+  margin-left: -90px;
+  font-size: 20px;
+}
+.g1{
+  margin-left: -30px;
+  font-size: 20px;
+}
+.g2{
+  margin-left: -10px;
+  font-size: 20px;
+}
+.h{
+  margin-top: 60px;
+  width: 1520px;
+  height: 600px;
+}
+.k8{
+  color: #fff;
+  font-size: 45px;
+  margin-top: -520px;
+  margin-left: 140px;
+}
+.t8{
+  color: #fff;
+  font-size: 25px;
+margin-top: 20px;
+margin-left: 140px;
+  font-family: Sanchez;
+}
+.gr{
+  background-color: rgb(41, 40, 40);
+  height:400px;
+  width: 1550px;
+}
+.p1{
+  width: 150px;
+  height: 60px;
+  mix-blend-mode: lighten;
+  margin-top: 250px;
+  margin-left: 600px;
+}
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
