@@ -1,9 +1,20 @@
 
 # FLAPPY BIRD 
-## About
-This is Flappy Bird clone. The player controls the bird, which moves persistently to the right.
- The main objective of the player is to gain the maximum points by defending the bird from hurdles.
-This is build using Python and Pygame library.
+## Problem Statement
+To make a Flappy Bird game
+
+## Description
+Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. 
+
+The player is tasked with navigating Faby through pairs of pipes that have equally sized gaps placed at random heights.
+
+The main objective of the player is to gain the maximum points by defending the bird from hurdles. 
+
+
+
+
+## Technologies used
+Python and Pygame library
 
 ## Screenshots
 
