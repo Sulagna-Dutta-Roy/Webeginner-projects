@@ -1,52 +1,52 @@
-body{
-background-color: aqua;
+body {
+  background-image: url("numbers.png");
 }
-h1{
-    text-align: center;
-    color: lightcoral;
+.header {
+  background-color: #000000;
 }
-h3{
-    font-style: italic;
-    color: rgb(36, 109, 193);
-    font-size: large;
-    text-align: center;
-    font-family: Tahoma;
-}
-.container{
-    width: 560px;
-    height: 400px;
-    background-color: mediumslateblue;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    border: 2rem solid lavenderblush;
-    
 
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 5rem;
+  font-family: "Black Ops One", cursive;
+  color: red;
+  text-shadow: 2px 2px black;
 }
-h2{
-    text-align: center;
-    padding-top: 100px;
+.container {
+  width: 640px;
+  height: 450px;
+  background-color: black;
+  text-align: center;
+  border: 0.5rem solid lavenderblush;
 }
-h2:hover{
-    color: blue;
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  color: white;
+  padding-top: 100px;
 }
-#user{
-    width: 170px;
-    height: 20px;
-    padding: 0 10px;
+h2:hover {
+  color: red;
 }
-.btn{
- border-radius: 20px;
- padding: 0 10px;
- margin: 0 5px;   
- cursor: pointer;
+#user {
+  width: 450px;
+  height: 40px;
+  margin: 20px 10px;
 }
-button:hover{
-    background-color: aqua;
-    cursor: pointer;
-    transition: .2s;
-   }
-p{
-    color: antiquewhite;
-    font-size: 30px;
+.btn {
+  width: 185px;
+  font-size: 1.5rem;
+  font-family: "Black Ops One", cursive;
+  border-radius: 20px;
+  padding:0px ;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 30px;
 }

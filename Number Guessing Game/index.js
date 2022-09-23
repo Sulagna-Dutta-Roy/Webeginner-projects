@@ -11,16 +11,18 @@ again.addEventListener('click',function(){
 document.addEventListener('keypress',function(e){
         if(e.key=="Enter")
         check();
-        
-        
 })
 function check(){
     var guess = document.getElementById("user").value;
     if(random == guess)
     {
         ans.innerHTML ="Your Guess is Correct "+random+" is the number";
+<<<<<<< HEAD
+        ans.style.color= "#00FFAB";
+=======
         ans.style.color= "#006400";
         t++;
+>>>>>>> 92d675b532b475346458fb0184de69a890533cac
     }
     else if(random>guess && random>1)
     {
