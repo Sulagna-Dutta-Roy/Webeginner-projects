@@ -1,7 +1,7 @@
 #  Recipe Searcher
 
 ## Introduction
-Tis website is used to search a variety of Recipes and it also show the random recipe everytime when you open the site.
+This website is used to search a variety of Recipes and it also show the random recipe everytime when you open the site.
 ## Technologies Used
 HTML, CSS, JavaScript.
 
