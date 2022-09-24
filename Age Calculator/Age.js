@@ -38,5 +38,27 @@ function age() {
     if(isNaN(d1) || isNaN(m1) || isNaN(y1) || d1<=0 || m1<=0||y1<=0){
       document.getElementById('age').innerHTML = 'Invalid Date or Empty';
     }
-    
+    else{
+
+
+
+      if(y1>=y2){
+        if(y1>y2){
+          document.getElementById('age').innerHTML = "Future DOB is not Allowed";
+        }
+        else{
+          if(m1>=m2){
+            if(m1>m2){
+              document.getElementById('age').innerHTML = "Future DOB is not Allowed";
+            }
+            else{
+              if(d1>d2){
+                document.getElementById('age').innerHTML = "Future DOB is not Allowed";
+              }
+            }
+          }
+        }
+
+      }
+    }
   }
