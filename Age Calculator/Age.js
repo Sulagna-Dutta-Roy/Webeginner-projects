@@ -15,6 +15,7 @@ function age() {
     var m1 = document.getElementById('month').value;
     var y1 = document.getElementById('year').value;
 
+
     var date = new Date();
     var d2 = date.getDate();
     var m2 = 1 + date.getMonth();
@@ -34,4 +35,8 @@ function age() {
     var y = y2 - y1;
 
     document.getElementById('age').innerHTML = 'You are '+y+' Years '+m+' Months '+d+' Days Old';
+    if(isNaN(d1) || isNaN(m1) || isNaN(y1) || d1<=0 || m1<=0||y1<=0){
+      document.getElementById('age').innerHTML = 'Invalid Date or Empty';
+    }
+    
   }
