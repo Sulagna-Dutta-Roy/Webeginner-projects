@@ -39,7 +39,9 @@ function age() {
       document.getElementById('age').innerHTML = 'Invalid Date or Empty';
     }
     else{
-
+      if(m1>12 || d1>month[m1-1]){
+        document.getElementById('age').innerHTML = "Invalid DOB Entered";
+      }
 
 
       if(y1>=y2){
