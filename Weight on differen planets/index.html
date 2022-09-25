@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weights on Planets</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Weights on planets</h1>
+        <div class="inputs">
+          <p>Choose the planet</p>
+          <select name="planets" id="planets">
+            <option value="Mercury" selected="selected">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Uranus">Uranus</option>
+            <option value="Neptune">Neptune</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+    <section id="main">
+      <div class="display">
+        <div class="data">
+          <label for="weight">Enter the weight <span>(in kgs)</span></label>
+          <input type="number" id="weight" />
+        </div>
+        <button>Submit</button>
+      </div>
+      <div class="image"></div>
+      <div class="answer"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
