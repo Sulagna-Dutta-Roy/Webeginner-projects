@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272822;
+    color: white;
+    height: 72px;
+}
+
+.content{
+    font-family: 'Potta One', cursive;
+}
+
+.container{
+    width: 50vw;
+    padding: 32px 0;
+    margin: auto;
+    margin-bottom: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.logo{
+    padding: 0 13px;
+}
+
+.logo img{
+    width: 32px;
+}
+
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 14px !important;
+}
+
+footer{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a {
+    font-size: 22px;
+    color: #ff073a;
+    font-weight: 800;
+}
