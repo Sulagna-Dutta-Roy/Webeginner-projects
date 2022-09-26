@@ -11,8 +11,6 @@ again.addEventListener('click',function(){
 document.addEventListener('keypress',function(e){
         if(e.key=="Enter")
         check();
-        
-        
 })
 function check(){
     var guess = document.getElementById("user").value;
