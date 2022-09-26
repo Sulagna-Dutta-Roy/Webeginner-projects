@@ -1,0 +1,266 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  font-family: 'poppins''sans-sherif';
+}
+.nav-link{
+  color:white;
+}
+
+.navbar-collapse{
+
+justify-content: flex-end;
+font-size: 15px;
+text-transform: uppercase;
+color:white;
+}
+.img1{
+  height:500px;
+  width:100%;
+  opacity: 0.85;
+}
+.carousel-caption{
+  top:40%;
+   font-size: 1.5em;
+     text-shadow: 1px 1px black;
+     font-family: 'Baloo Bhai 2', cursive;
+}
+h1{
+  font-size: 3.0em;
+    text-shadow: 3px 3px black;
+   font-family: 'Poppins', sans-serif;
+}
+.bestlogo{
+  position: absolute;
+  height:130px;
+  width:130px;
+}
+.service-icon{
+  display: inline-block;
+  font-size: 32px;
+  color:black;
+  padding:8px 16px;
+  margin-bottom:16px;
+}
+h5{
+  font-weight: bold;
+   font-family: 'Poppins', sans-serif;
+}
+.para{
+   font-family: 'Baloo Bhai 2', cursive;
+   font-size: 20px;
+}
+.pic{
+  height:200px;
+  width:200px;
+
+  border-radius: 25px;
+}
+.pic:hover{
+ 
+ background-color: #f9e6f8;
+}
+.products{
+  background-color: black;
+
+}
+.feature{
+  color:white;
+  font-size:30px;
+  padding:25px;
+}
+.panel-heading{
+  font-size: 20px;
+  color:white;
+  padding: 23px;
+  text-align: center;
+}
+.panel-icon{
+  color:yellow;
+  text-align: center;
+  padding:18px 18px;
+  display:block;
+  margin: auto;
+}
+.shoes{
+  color:white;
+  font-size: 24px;
+  text-align: center;
+}
+.img1:hover{
+  background-color: black;
+  opacity: 0.6;
+}
+.post{
+  background-color: white;
+  margin-top: 40px;
+}
+.btn{
+
+text-align: center;
+
+}
+.deal-hero{
+       background-image:url('images/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh;
+      position: relative;
+      margin-top:50px;
+}
+.deal-hero .deal-contents{
+width: 50%;
+    padding: 30px;
+
+    background: #ffffff;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+.top{
+  justify-content: space-between;
+}
+.new-products{
+  font-family:'Poppins', sans-serif;
+  font-weight: bold;
+  font-size:35px;
+  padding:30px;
+}
+.card::after :hover{
+  content:"Buy Now";
+  background-color: black;
+  opacity: 0.4;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .image {
+  opacity: 0.3;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 13px 30px;
+}
+main{
+  background-color: #f9e6f8;
+}
+.Aboutus::before{
+  content:"";
+  background-image: url('images/about2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:30px;
+  margin-top:50px;
+  position: absolute;
+  opacity: 0.5;
+  z-index:-1;
+  width:100%;
+  height:300px;
+}
+.abs{
+
+
+  text-align: center;
+  padding:100px 10px;
+  margin-top:50px;
+}
+.Aheading{
+    font-family:'Poppins', sans-serif;
+  font-size:35px;
+}
+.Acontent{
+  font-size: 25px;
+   font-family: 'Baloo Bhai 2', cursive;
+}
+#contact{
+   position: relative;
+}
+#contact::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.4;
+   background: url('images/contact.jpeg') no-repeat center center/cover;
+
+}
+#contact-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 9px;
+   font-size: 1.1rem;
+}
+
+#contact-box form{
+   width: 40%;
+}
+
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Bree Serif', serif;
+
+}
+.center{
+  text-align: center;
+  font: 30px;
+
+}
+footer{
+  background-color: black;
+  color:white;
+
+  padding:20px;
+}
+ul{
+  list-style-type: none;
+}
+
+ .widget {
+    margin-bottom: 40px;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}

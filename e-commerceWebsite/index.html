@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css"> 
+      <script src="https://kit.fontawesome.com/0833c0f178.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>E-commerce Website</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+          <a href="#"class="navbar-brand">My Shop</a>
+          <button class="navbar-toggler" data-toggle="collapse"
+          data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse"id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+           <a href="#"class="nav-link">Home</a>
+           <li class="nav-item ">
+             <a href="#"class="nav-link">Services</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#"class="nav-link">Products</a>
+         </li>
+         <li class="nav-item ">
+           <a href="#"class="nav-link">About</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#"class="nav-link">Contact</a>
+       </li>
+       <li class="nav-item">
+         <a href="#" class="nav-link">
+           <i class="fas fa-shopping-cart fa-2x" id="cart"></i>
+         </a>
+         </li>
+   </ul>
+        </div>
+      </nav>
+  <!--End of Navbar-->
+   <!--carousel start in the section-->
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="images/g3.jpg" class="d-block w-100 img1" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+           <h1>Girl's Collection</h1>
+           <p>BEST DEAL at 499.Order Now!!</p>
+           <p>India's best Shopping Hub .Enjoy to get Benefit</p>
+           <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-danger" type="button">Shop Now</button>
+         <button class="btn btn-danger" type="button">Know More</button>
+               </div>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="images/g5.jpg" class="d-block w-100 img1" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+           <h1>Men's Collection</h1>
+           <p>BEST DEAL at 499.Order Now!!</p>
+           <p>India's best Shopping Hub .Enjoy to get Benefit</p>
+           <div class="d-grid gap-2 d-md-block">
+      <button class="btn btn-danger" type="button">shop Now</button>
+      <button class="btn btn-danger" type="button">Know More</button>
+     </div>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="images/g1.jpg" class="d-block w-100 img1" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+
+           <h1>Summer Collection</h1>
+           <p>BEST DEAL at 499.Order Now!!</p>
+           <p>India's best Shopping Hub .Enjoy to get Benefit</p>
+           <div class="d-grid gap-2 d-md-block">
+     <button class="btn btn-danger" type="button">Shop Now</button>
+     <button class="btn btn-danger" type="button">Know More</button>
+     </div>
+         </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+<!--carousel end-->
+<div class="alert alert-primary" role="alert"></div>
+<!--other section-->
+<section class="services py-5 text-center">
+  <div class="container">
+    <div class="row">
+      <!--single services-->
+      <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+        <span class="service-icon">
+          <i class="fas fa-globe fa-2x"></i>
+        </span>
+        <h5 class="font-weight-bold text-uppercase">
+          WorldWide Shipping
+        </h5>
+        <p class="text-captalize para">We provide worldwide shipping at effective price gate .Enjoy our services</p>
+      </div>
+      <!--end of single services-->
+      <!--second services-->
+      <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+        <span class="service-icon">
+          <i class="fas fa-stamp fa-2x"></i>
+        </span>
+        <h5 class="font-weight-bold text-uppercase">
+         Best Deal in just 499
+        </h5>
+        <p class="text-captalize para">Get Summmer Offer ,started at 499 Best Quality products started in just 499. </p>
+      </div>
+      <!--end of second services-->
+      <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+        <span class="service-icon">
+          <i class="fas fa-file-invoice-dollar fa-2x"></i>
+        </span>
+        <h5 class="font-weight-bold text-uppercase">
+         30 Days Money Back
+        </h5>
+        <p class="text-captalize para">Return product and get money back upto 30 days .Buy and Enjoy our services</p>
+      </div>
+      <!--end of thord services-->
+    </div>
+  </div>
+</section>
+  <!--featured product-->
+  <section id="products bg-dark" class="products py-5">
+  <div class="container ">
+  <div class="row">
+      <div class="col-10 mx-auto col-sm-6 text-center">
+        <h1 class="text-capitalize products-title feature">
+          Featured Products
+        </h1>
+      </div>
+    </div>
+    <div>
+      <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-primary"  >
+          <div class="panel-heading title">  WOMEN'S BLACK SUIT</div>
+          <div class="panel-body"><img class="pic"src="images/cloth1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">
+            <span class="panel-icon">
+                <i class="fas fa-star fa-x"></i>
+                <i class="fas fa-star fa-x"></i>
+                   <i class="fas fa-star fa-x"></i>
+                   <i class="fas fa-star fa-x"></i>
+
+                   <i class="fas fa-star fa-x"></i>
+
+         </span>
+     <p class="shoes">Rs.990</p>
+     <button type="button"class="btn btn-danger addToCartBtn"   >Buy now</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">  WOMEN'S JUMPSUIT</div>
+          <div class="panel-body"><img class="pic" src="images/cloth2.png" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">
+            <span class="panel-icon">
+                <i class="fas fa-star fa-x"></i>
+                <i class="fas fa-star fa-x"></i>
+                   <i class="fas fa-star fa-x"></i>
+                   <i class="fas fa-star fa-x"></i>
+
+                   <i class="fas fa-star fa-x"></i>
+
+         </span>
+   <p class="shoes">Rs.690
+   <button type="button "class="btn btn-danger addToCartBtn">Buy now</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-primary" >
+          <div class="panel-heading">  WOMEN'S LONG SKIRT</div>
+          <div class="panel-body"><img class="pic"src="images/cloth4.png" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">
+            <span class="panel-icon">
+                <i class="fas fa-star fa-x"></i>
+                <i class="fas fa-star fa-x"></i>
+                   <i class="fas fa-star fa-x"></i>
+                   <i class="fas fa-star fa-x"></i>
+
+                   <i class="fas fa-star fa-x"></i>
+
+         </span>
+      <p class="shoes">Rs.490
+      <button type="button"class="btn btn-danger "  >Buy now</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <!--second row-->
+  <div class="container">
+<div class="row">
+  <div class="col-sm-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading"> REEBOK MEN'S TSHIRT</div>
+      <div class="panel-body"><img class="pic"src="images/shirt1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+      <div class="panel-footer">
+        <span class="panel-icon">
+            <i class="fas fa-star fa-x"></i>
+            <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+
+               <i class="fas fa-star fa-x"></i>
+
+     </span>
+   <p class="shoes">Rs.590
+   <button type="button"class="btn btn-danger">Buy now</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading"> MEN'S CLASSIC FIT T-SHIRT</div>
+      <div class="panel-body"><img class="pic" src="images/shirt2.png" class="img-responsive" style="width:100%" alt="Image"></div>
+      <div class="panel-footer">
+        <span class="panel-icon">
+            <i class="fas fa-star fa-x"></i>
+            <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+
+               <i class="fas fa-star fa-x"></i>
+
+     </span>
+ <p class="shoes">Rs.699
+ <button type="button"class="btn btn-danger">Buy now</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading"> MEN'S COTTON T-SHIRT</div>
+      <div class="panel-body"><img class="pic"src="images/shirt4.png" class="img-responsive" style="width:100%" alt="Image"></div>
+      <div class="panel-footer">
+        <span class="panel-icon">
+            <i class="fas fa-star fa-x"></i>
+            <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+
+               <i class="fas fa-star fa-x"></i>
+
+     </span>
+   <p class="shoes">Rs.399
+   <button type="button"class="btn btn-danger">Buy now</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div><br><br>
+  <!--end of second row-->
+  <!--start of third row-->
+  <div class="container">
+<div class="row">
+  <div class="col-sm-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">  ROYAL BLUE SHOESFIT</div>
+      <div class="panel-body"><img class="pic"src="images/shoe2.png" class="img-responsive" style="width:100%" alt="Image"></div>
+      <div class="panel-footer">
+        <span class="panel-icon">
+            <i class="fas fa-star fa-x"></i>
+            <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+
+               <i class="fas fa-star fa-x"></i>
+
+     </span>
+   <p class="shoes">Rs.399
+   <button type="button"class="btn btn-danger">Buy now</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">   CAMPHUS RED SHOES</div>
+      <div class="panel-body"><img class="pic" src="images/shoe1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+      <div class="panel-footer">
+        <span class="panel-icon">
+            <i class="fas fa-star fa-x"></i>
+            <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+
+               <i class="fas fa-star fa-x"></i>
+
+     </span>
+    <p class="shoes">Rs.599
+    <button type="button"class="btn btn-danger">Buy now</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading"> GREEN COMFORT SHOES</div>
+      <div class="panel-body"><img class="pic"src="images/shoe4.png" class="img-responsive" style="width:100%" alt="Image"></div>
+      <div class="panel-footer">
+
+        <span class="panel-icon">
+            <i class="fas fa-star fa-x"></i>
+            <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+               <i class="fas fa-star fa-x"></i>
+
+               <i class="fas fa-star fa-x"></i>
+
+     </span>
+     <p class="shoes">Rs.499
+     <button type="button"class="btn btn-danger">Buy now</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div><br><br>
+</section>
+
+
+
+<!--card end-->
+    </div>
+  </div>
+  </section>
+
+<div class="container">
+<div class="deal-hero" >
+<div class="deal-contents">
+<span class="subtitle">Limited Offers 20% OFF</span>
+<h2 class="title">Week Deal</h2>
+<p>Best offer started with 499 at 50% OFF .Buy womens clothes,lahnga choli , jeans, mobile phone. </p>
+<a href="#" class="btn btn-danger">Shop Now</a>
+</div>
+</div>
+</div>
+<!---section bottom-->
+
+<main>
+<div class="container bottom">
+  <div class="row top ">
+    <h2  class="new-products"style="text-align:center">NEW PRODUCTS</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="images/watch3.png" class="card-img-top image" alt="...">
+      <div class="middle">
+  <div class="text">view</div>
+</div>
+
+      <div class="card-body">
+        <h5 class="card-title">Branded Digital watch </h5>
+        <p class="card-text"><del>1000</del> only in 599</p>
+        <button type="button"class="btn btn-danger">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/watch1.png" class="card-img-top image" alt="...">
+      <div class="middle">
+  <div class="text">view</div>
+</div>
+      <div class="card-body">
+        <h5 class="card-title">Men's Watch</h5>
+        <p class="card-text"><del>1500</del>only in 699</p>
+        <button type="button"class="btn btn-danger">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+    <img src="images/watch2.png" class="card-img-top image" alt="...">
+    <div class="middle">
+<div class="text">view</div>
+</div>
+    <div class="card-body">
+      <h5 class="card-title">New Watch </h5>
+      <p class="card-text"><del>999</del>only in 499</p>
+      <button type="button"class="btn btn-danger">Add to Cart</button>
+    </div>
+  </div>
+  </div>
+</div>
+<!--first row ended-->
+<div class="container">
+  <div class="row top">
+    <h2  class="new-products"style="text-align:center">Children's Collection</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="images/baby4.jpg" class="card-img-top image" alt="...">
+      <div class="middle">
+  <div class="text">view</div>
+</div>
+      <div class="card-body">
+        <h5 class="card-title">Branded Digital watch </h5>
+        <p class="card-text"><del>1000</del> only in 599</p>
+        <button type="button"class="btn btn-danger">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/baby1.png" class="card-img-top image" alt="...">
+      <div class="middle">
+  <div class="text">view</div>
+</div>
+      <div class="card-body">
+        <h5 class="card-title">Men's Watch</h5>
+        <p class="card-text"><del>1500</del>only in 699</p>
+        <button type="button"class="btn btn-danger">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+    <img src="images/baby3.jpg" class="card-img-top image" alt="...">
+    <div class="middle">
+<div class="text">view</div>
+</div>
+    <div class="card-body">
+      <h5 class="card-title">New Watch </h5>
+      <p class="card-text"><del>999</del>only in 499</p>
+      <button type="button"class="btn btn-danger">Add to Cart</button>
+    </div>
+  </div>
+  </div>
+</div>
+<!---third section-->
+<div class="container">
+  <div class="row top">
+    <h2  class="new-products"style="text-align:center">Girl's Collection</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="images/beb1.png" class="card-img-top image" alt="...">
+      <div class="middle">
+  <div class="text">view</div>
+</div>
+      <div class="card-body">
+        <h5 class="card-title">Girls Partywaer Dress</h5>
+        <p class="card-text"><del>1500</del> only in 899</p>
+        <button type="button"class="btn btn-danger">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/beb5.png" class="card-img-top image" alt="...">
+      <div class="middle">
+  <div class="text">View </div>
+</div>
+      <div class="card-body">
+        <h5 class="card-title">Baby Frock</h5>
+        <p class="card-text"><del>1300</del>only in 690</p>
+        <button type="button"class="btn btn-danger">Add to Cart</button>
+
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+    <img src="images/beb6.jpg" class="card-img-top image" alt="...">
+    <div class="middle">
+<div class="text"> view</div>
+</div>
+    <div class="card-body">
+      <h5 class="card-title">White Baby Dress</h5>
+      <p class="card-text"><del>2000</del>only in 999</p>
+      <button type="button"class="btn btn-danger">Add to Cart</button>
+
+    </div>
+  </div>
+  </div>
+</div>
+</main>
+
+<!-- about us section -->
+
+<section class="Aboutus">
+  <div class=" d-none d-md-block">
+
+      <div class="abs">
+      <h2 class="Aheading">About us</h2>
+      <p class="Acontent">We provide good Quality products all over the world</p>
+      <p class="Acontent">we believe to provide good products to ours customers</p>
+      <p class="Acontent">Buy our products and enjoy our services</p>
+      <div>
+
+  </div>
+</section>
+<!--end about us-->
+
+<section id="contact">
+       <h1 class="center">Contact Us</h1>
+       <div id="contact-box">
+           <form action="">
+               <div class="form-group">
+                   <label for="name">Name: </label>
+                   <input type="text" name="name" id="name" placeholder="Enter your name">
+               </div>
+               <div class="form-group">
+                   <label for="email">Email: </label>
+                   <input type="email" name="name" id="email" placeholder="Enter your email">
+               </div>
+               <div class="form-group">
+                   <label for="phone">Phone Number: </label>
+                   <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+               </div>
+               <div class="form-group">
+                   <label for="message">Message: </label>
+                   <textarea name="message" id="message" cols="30" rows="10"></textarea>
+               </div>
+           </form>
+       </div>
+   </section>
+   <footer>
+
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-2">
+          <div class="widget">
+            <h4>HELP</h4>
+         <ul class="list-unstyled">
+           <li class="list">Contact us</li>
+           <li class="list">Account</li>
+            <li class="list">Shipping</li>
+             <li class="list">Return</li>
+              <li class="list">FAQ</li>
+           </ul>
+         </div>
+         </div>
+
+         <div class="col-lg-2">
+        <div class="widget">
+          <h4>ABOUT US</h4>
+       <ul class="list-unstyled">
+         <li class="list">About us</li>
+         <li class="list">Press</li>
+          <li class="list">Careers</li>
+           <li class="list">Team</li>
+            <li class="list">FAQ</li>
+         </ul>
+       </div>
+       </div>
+
+       <div class="col-lg-2">
+      <div class="widget">
+        <h4>SHOP</h4>
+     <ul class="list-unstyled">
+       <li class="list">Store</li>
+       <li class="list">Gift card</li>
+        <li class="list">Return</li>
+         <li class="list">Discount</li>
+          <li class="list">Offer</li>
+       </ul>
+     </div>
+     </div>
+
+     <div class="col-lg-6">
+<div class="widget">
+<h4>Join our list and receive exclusives</h4>
+<form action="#" class="subscribe">
+<div class="d-flex">
+<input type="email" class="form-control" placeholder="Email address">
+<input type="submit" class="btn btn-danger" value="Subscribe">
+</div>
+</form>
+</div>
+</div>
+         </div>
+        <div class="center">
+            Copyright &copy; www.myshopp.com &&   made by Rishika Vishnoi 
+        </div>
+      </div>
+    </footer>
+  </body>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  
+   
+  </body>
+</html>
