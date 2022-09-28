@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	color: white;
+	background-color: rgb(84, 49, 4);
+    
+	height: 100%; /* You must set a specified height */
+  	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover;
+}
+#count {
+	height: 100%;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text {
+	justify-content: left;
+	margin: 50px;
+	font-size: 30px;
+	color: rgb(247, 241, 241);
+	width: 80%;
+	margin-left: -20px;
+}
+nav {
+	width: 100%;
+	background: rgba(243, 5, 184, 0.5);
+	position: fixed;
+	top: 0;
+	height: 70px;
+	
+}
+nav > h2 {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: rgb(241, 235, 235);
+	margin-left: 15px;
+	padding-bottom: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+form > h1 {
+	color: #f10bde;
+}
+form {
+	text-align: center;
+}
+footer {
+	height: 47px;
+	width: 100%;
+	background: rgba(243, 5, 184, 0.5);
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	
+}
+footer > h3 {
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+	color: #f1f1f1;
+	margin: 0px;
+}
