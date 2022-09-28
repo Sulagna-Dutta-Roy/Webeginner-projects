@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+.logo-box{
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+    
+
+}
+span{
+    margin: 10px;
+}
+
+.body-container{
+    background-color: #404eed;
+   
+   margin-top: 14px;
+  background-image: url(assets/images/background-1-removebg-preview.png);
+  background-repeat: no-repeat; 
+    background-size: cover;
+  
+}
+.shoe-image{
+    background-image: url(assets/images/background-2-removebg-preview.png);
+    background-size: 689px 352px;
+    position: absolute;
+    margin-bottom: 55px;
+     bottom:0;
+    left: 50%;
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: none;
+    margin-left: -1040px;
+    -webkit-transform: none;
+    transform: none;
+}
+.controller-img{
+width: 615px;
+height:360px;
+position: absolute;
+margin-bottom:57px;
+ display: block;
+bottom: 0;
+left: 50%;
+margin-left: 370px;
+}
+    
+
+   
+
+h1{
+
+    font-size: 56px;
+    font-weight: 800;
+   font-family:"Ginto Nord"
+    Whitney "Helvetica Neue"
+    Helvetica Arial sans-serif
+   
+}
+
+.btn{
+    background-color: #404eed;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+}
+
+.col{
+    opacity: 0.7;
+}
+.image{
+  position: absolute;
+  margin-left: -70px;
+}
+.nav-bars{
+    font-size: 20px;
+    color: white;
+    margin-top: 25px;
+    margin-left: 45px;
+    overflow: hidden;
+ }
+ .logo-3oeRIY{
+margin-left: 120px;
+ }
+ .toogle-box{
+    text-align: center;
+    margin-top: -30px;
+   width: 950px;
+   margin-left: 270px;
+    height: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    overflow-y: hidden;
+ }
+ .down{
+    padding: 10px;
+    margin: 10px;
+ }
+ .down:hover{
+   text-decoration: underline;
+   cursor: pointer;
+   
+ }
+ .btn-new{
+    
+    margin-top: -30px;
+   margin-left:1200px;
+   
+   
+ }
+ .app-btn{
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+    border:none;
+ }
+ .app-btn:hover{
+    color:blueviolet;
+ }
+ .btn-text-container {
+     width: 780px;
+     height: 278.7px;
+     margin-top: 120px;
+   
+    
+ }
+ .main-text-container{
+    width: 1260px;
+    height: 518.7px;
+    margin-left: 450px;
+   
+ 
+    
+   
+ }
+
+ .text-container{
+   width: 780px;
+   height: 190.7px;
+   color: white;
+   font-weight: 800;
+    overflow:hidden;
+   
+ 
+    }
+.text{
+margin-top: 15px;
+width: 510.8px;
+height: 123.5px;
+font-weight: normal;
+font-family:Whitney "Helvetica Neue"
+    Helvetica Arial sans-serif;
+line-height: 32.5px;
+font-size: 18px;  
+ vertical-align: baseline;
+ letter-spacing: normal;
+  word-spacing: 0px;
+   margin-top: 20px;
+    padding: 0px;
+    overflow-y: hidden;
+}
+.buttons{
+    margin-top: 30px;
+}
+
+.down-btn{
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    margin-right: 35px;
+    
+}
+
+.brow-btn{
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+ 
+
+}
+.down-btn:hover{
+    color:blueviolet;
+    cursor: pointer;
+}
+.brow-btn:hover{
+    background-color:black;
+    opacity:0.8;
+    cursor: pointer;
+}
+
+    
+ 
+
