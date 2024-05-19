@@ -23,6 +23,16 @@ body{
         right: 700px;
    
 }
+#maxScore{
+       
+       height: auto;
+        width: auto;
+        font-size: 30px;
+        position: absolute;
+        top: 55px;
+        right: 680px;
+   
+}
 #gameOver{
             display:none;
             font-size: 75px;

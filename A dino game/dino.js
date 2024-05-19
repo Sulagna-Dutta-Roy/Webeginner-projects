@@ -1,6 +1,7 @@
 const player = document.getElementById("player");
 const obstacle = document.getElementById("obstacle");
 const score=document.getElementById("score");
+const maxScore=document.getElementById("maxScore");
 const gameOver=document.getElementById("gameOver");
 
 
@@ -8,12 +9,21 @@ let interval=null;
 let playerScore=0;
 
 let scoreCounter=()=>{
-playerScore++;
-score.innerHTML=`Your Score:<b> ${playerScore}</b>`;
+    playerScore++;
+    // if(playerScore>maxScore && maxScore!=0)
+
+    score.innerHTML=`Your Score:<b> ${playerScore}</b>`;
 
 
 }
-    
+
+let maxScoreCounter = ()=>{
+    if(score.innerHTML>maxScore.innerHTML){
+        maxScore.innerHTML=`Highest Score:<b> ${playerScore}</b>`;
+    }
+}
+
+
 
 window.addEventListener("keydown",(start)=>{
     if(start.code =="Space"){
@@ -37,7 +47,7 @@ window.addEventListener("keydown",(e)=>{
       }
 });
 
-let  playerIsNotDead=setInterval(()=>{
+let playerIsNotDead=setInterval(()=>{
     let playerBottom=parseInt(window.getComputedStyle(player).getPropertyValue("bottom"));
    console.log("playerBottom"+playerBottom);
 
@@ -47,6 +57,8 @@ let  playerIsNotDead=setInterval(()=>{
     if(playerBottom<=100 &&obstacleLeft>=0&& obstacleLeft<=50){
         
         gameOver.style.display="block";
+        console.log(score)
+        maxScoreCounter();
         //alert("Game Over, REfresh to play again");
         obstacle.classList.remove("obstacleActive");
        
