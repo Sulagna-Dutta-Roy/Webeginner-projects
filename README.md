@@ -1,4 +1,5 @@
 # Welcome to Webeginner-projects
+### This project was accepted in SSOC 2022. Please don't raise anything here. It's 2024(No programs ongoing)
 
 This respository is specially for newcomers who wants to enhance their knowledge and skills by making small/large projects.
 
